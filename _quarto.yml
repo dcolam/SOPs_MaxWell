@@ -1,0 +1,28 @@
+project:
+  type: website
+
+website:
+  title: "HD-MEA Tutorials for e-phac Users"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - maxtwo_part1.qmd
+      - maxtwo_part2.qmd
+      - maxtwo_part3.qmd
+      - maxtwo_part4.qmd
+      - about.qmd
+  sidebar:
+    contents: auto
+  page-navigation: true
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+editor: visual
+
