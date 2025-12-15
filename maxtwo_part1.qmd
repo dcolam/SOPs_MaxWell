@@ -41,7 +41,7 @@ The username and password of the remote computer will be communicated to you sep
 
 Good to know:
 
-If you are connected to the UZH intranet either directly or through VPN, you can also access the remote computer via RDP. This allows you to set custom resolutions for your display.
+If you are connected to the UZH intranet either directly or through VPN, you can also access the remote computer via RDP. This allows you to set custom resolutions for your display. Contact us to know more about it.
 
 ### Start MaxLab Live Scope
 
@@ -52,6 +52,8 @@ You will need to initiate the plate by clicking on "Initiate" (close to left bot
 Click on "Offset" and observe the Offset Histogram close to the right-upper corner becoming tighter.
 
 Now you are ready to start a recording. Happy Spiking!!
+
+![Remote Connection Setup](start_picture.png){fig-align="center"}
 
 ## Troubleshooting:
 
