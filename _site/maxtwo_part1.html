@@ -192,14 +192,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome-to-maxtwo" id="toc-welcome-to-maxtwo" class="nav-link active" data-scroll-target="#welcome-to-maxtwo">Welcome To MaxTwo</a>
-  <ul class="collapse">
-  <li><a href="#before-starting" id="toc-before-starting" class="nav-link" data-scroll-target="#before-starting">Before starting!:</a></li>
+  <li><a href="#welcome-to-maxtwo" id="toc-welcome-to-maxtwo" class="nav-link active" data-scroll-target="#welcome-to-maxtwo">Welcome to MaxTwo</a></li>
+  <li><a href="#before-starting" id="toc-before-starting" class="nav-link" data-scroll-target="#before-starting">Before Starting</a></li>
   <li><a href="#place-plate-into-the-recorder" id="toc-place-plate-into-the-recorder" class="nav-link" data-scroll-target="#place-plate-into-the-recorder">Place Plate into the Recorder</a></li>
   <li><a href="#access-the-linux-computer" id="toc-access-the-linux-computer" class="nav-link" data-scroll-target="#access-the-linux-computer">Access the Linux Computer</a></li>
-  <li><a href="#start-maxlab-live-scope" id="toc-start-maxlab-live-scope" class="nav-link" data-scroll-target="#start-maxlab-live-scope">Start MaxLab Live Scope</a></li>
+  <li><a href="#start-maxlab-live-scope" id="toc-start-maxlab-live-scope" class="nav-link" data-scroll-target="#start-maxlab-live-scope">Start MaxLab Live Scope</a>
+  <ul class="collapse">
+  <li><a href="#initiate-the-plate" id="toc-initiate-the-plate" class="nav-link" data-scroll-target="#initiate-the-plate">Initiate the Plate</a></li>
+  <li><a href="#set-and-check-the-offset" id="toc-set-and-check-the-offset" class="nav-link" data-scroll-target="#set-and-check-the-offset">Set and Check the Offset</a></li>
   </ul></li>
-  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting:</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#i-cannot-see-the-citrix-icon-for-the-linux-computer" id="toc-i-cannot-see-the-citrix-icon-for-the-linux-computer" class="nav-link" data-scroll-target="#i-cannot-see-the-citrix-icon-for-the-linux-computer">I cannot see the Citrix icon for the Linux computer</a></li>
+  <li><a href="#the-linux-computer-is-very-slow-or-the-display-does-not-show-the-whole-window" id="toc-the-linux-computer-is-very-slow-or-the-display-does-not-show-the-whole-window" class="nav-link" data-scroll-target="#the-linux-computer-is-very-slow-or-the-display-does-not-show-the-whole-window">The Linux computer is very slow or the display does not show the whole window</a></li>
+  <li><a href="#i-was-disconnected-and-now-see-number-of-sessions-reached" id="toc-i-was-disconnected-and-now-see-number-of-sessions-reached" class="nav-link" data-scroll-target="#i-was-disconnected-and-now-see-number-of-sessions-reached">I was disconnected and now see “Number of sessions reached”</a></li>
+  <li><a href="#i-cannot-set-the-offset-or-the-plate-id-is-wrong-24-well-plates-only" id="toc-i-cannot-set-the-offset-or-the-plate-id-is-wrong-24-well-plates-only" class="nav-link" data-scroll-target="#i-cannot-set-the-offset-or-the-plate-id-is-wrong-24-well-plates-only">I cannot set the Offset or the plate ID is wrong (24-well plates only)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -232,36 +240,55 @@ ul.task-list li input[type="checkbox"] {
 
 
 <section id="welcome-to-maxtwo" class="level2">
-<h2 class="anchored" data-anchor-id="welcome-to-maxtwo">Welcome To MaxTwo</h2>
-<p>This is a short tutorial describing how to access and setup the MaxTwo System. You will need to have access to our remote Linux Computer and Cell Culture System as well as have excitable cells growing on 6- or 24-well MaxTwo plates.</p>
-<section id="before-starting" class="level3">
-<h3 class="anchored" data-anchor-id="before-starting">Before starting!:</h3>
+<h2 class="anchored" data-anchor-id="welcome-to-maxtwo">Welcome to MaxTwo</h2>
+<p>This is a short tutorial describing how to access and set up the MaxTwo system. You will need access to the remote Linux computer and the MaxTwo cell culture system, as well as excitable cells growing on 6- or 24-well MaxTwo plates.</p>
+</section>
+<section id="before-starting" class="level2">
+<h2 class="anchored" data-anchor-id="before-starting">Before Starting</h2>
 <ul>
-<li><p>Always make sure to book the system on <a href="https://booking.core.uzh.ch/cgi-bin/AGS_Login.cgi">EZBooking</a>. If you don’t have access to the booking system, contact a staff member.</p></li>
-<li><p>Turn on the MaxTwo recorder and gas mixer (located underneath the microscope on a small incubator).</p></li>
-</ul>
-<!-- -->
-<ul>
-<li>Make sure to let the MaxTwo recorder warm up for 10-15min and the gas mixer to calibrate to 5% CO2. If it is not possible to come by sooner, you can ask a staff member to turn it on for you (some time in advance).</li>
+<li><p>Always make sure to book the system on <a href="https://booking.core.uzh.ch/cgi-bin/AGS_Login.cgi">EZBooking</a>.<br>
+If you do not have access to the booking system, contact a staff member.</p></li>
+<li><p>Turn on the <strong>MaxTwo recorder</strong> and <strong>gas mixer</strong> (located underneath the microscope on a small incubator).</p></li>
+<li><p>Allow the MaxTwo recorder to warm up for <strong>10–15 minutes</strong> and the gas mixer to calibrate to <strong>5% CO₂</strong>.<br>
+If it is not possible to arrive earlier, ask a staff member to turn the system on for you in advance.</p></li>
 </ul>
 </section>
-<section id="place-plate-into-the-recorder" class="level3">
-<h3 class="anchored" data-anchor-id="place-plate-into-the-recorder">Place Plate into the Recorder</h3>
+<section id="place-plate-into-the-recorder" class="level2">
+<h2 class="anchored" data-anchor-id="place-plate-into-the-recorder">Place Plate into the Recorder</h2>
 <ul>
-<li><p>Click once on the blue button (touchscreen style, does not need much force)</p></li>
-<li><p>Place the plate into the recorder, make sure the two notches on the upper short side aligns with the the holes on the plate.</p></li>
-<li><p>Double-click on the blue button (alternatively, this can be done also from the software).</p></li>
-<li><p>Close the recorder by clicking one time on the blue button.</p></li>
-<li><p>If you have a 6-well plate, make sure to remember the unique ID of your plate.</p></li>
+<li><p>Click <strong>once</strong> on the blue button<br>
+(touchscreen style, only light pressure is needed).</p></li>
+<li><p>Place the plate into the recorder.<br>
+Make sure the two notches on the upper short side align with the corresponding holes on the plate.</p></li>
+<li><p><strong>Double-click</strong> the blue button<br>
+(this can also be done from the software).</p></li>
+<li><p>Close the recorder by clicking <strong>once</strong> on the blue button.</p></li>
+<li><p>If you are using a <strong>6-well plate</strong>, make sure to remember the <strong>unique plate ID</strong>.</p></li>
 </ul>
 </section>
-<section id="access-the-linux-computer" class="level3">
-<h3 class="anchored" data-anchor-id="access-the-linux-computer">Access the Linux Computer</h3>
-<p>In order to access the recording Linux Computer, you will need to have access to Citrix. There are several ZMB tutorials on how to do it for the first on <a href="https://zmb.dozuki.com/Guide/Installation+of+Citrix+Workspace+app+-+Windows/243?lang=en">Windows</a>, <a href="https://zmb.dozuki.com/Guide/Installation+of+Citrix+Workspace+app+-+Mac/244?lang=en">Mac</a> or <a href="https://zmb.dozuki.com/Guide/Installation+of+Citrix+Workspace+app+-+Linux/245">Linux</a>.</p>
-<p>Click on “EPHAC MaxTwo VM” and connect to the PC via Remote Desktop (RDP). See below for troubleshooting if something goes wrong.</p>
+<section id="access-the-linux-computer" class="level2">
+<h2 class="anchored" data-anchor-id="access-the-linux-computer">Access the Linux Computer</h2>
+<p>To access the recording Linux computer, you need <strong>Citrix</strong>.</p>
+<p>There are several ZMB tutorials explaining how to set this up for the first time on<br>
+<a href="https://zmb.dozuki.com/Guide/Installation+of+Citrix+Workspace+app+-+Windows/243?lang=en">Windows</a>,<br>
+<a href="https://zmb.dozuki.com/Guide/Installation+of+Citrix+Workspace+app+-+Mac/244?lang=en">Mac</a>, or<br>
+<a href="https://zmb.dozuki.com/Guide/Installation+of+Citrix+Workspace+app+-+Linux/245">Linux</a>.</p>
+<p>Click on <strong>“EPHAC MaxTwo VM”</strong> and connect to the PC via <strong>Remote Desktop (RDP)</strong>.<br>
+See the troubleshooting section below if something goes wrong.</p>
 <p>The username and password of the remote computer will be communicated to you separately.</p>
-<p>Good to know:</p>
-<p>If you are connected to the UZH intranet either directly or through VPN, you can also access the remote computer via RDP. This allows you to set custom resolutions for your display. Contact us to know more about it.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Good to know
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you are connected to the <strong>UZH intranet</strong>, either directly or through VPN, you can also access the remote computer directly via <strong>RDP</strong>. This allows you to set custom screen resolutions. Contact staff for more information.</p>
+</div>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <div class="quarto-figure quarto-figure-center">
@@ -273,11 +300,39 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
-<section id="start-maxlab-live-scope" class="level3">
-<h3 class="anchored" data-anchor-id="start-maxlab-live-scope">Start MaxLab Live Scope</h3>
-<p>If you find the programs on from a previous user, make sure to close everything and start fresh every time. First, connect to the MaxTwo Recorder by clicking on “Server” on the Desktop, then open the MaxLab Live Program called “Scope”.</p>
-<p>You will need to initiate the plate by clicking on “Initiate” (close to left bottom corner). If you own a 24-well plate, it will recognize the plate id automatically. Still make sure the plate id matches yours, as in rare instances it reports the previously recorded plate. If you own a 6-well plate, type in your ID.</p>
-<p>Click on “Offset” and observe the Offset Histogram close to the right-upper corner becoming tighter. This indicates that the plate is properly connected. If the Offset Histogram is very wide, try to reseat the plate by unlocking and re-locking it from MaxLab (icon that looks like the MaxTwo recorder, then click on Unlock Plate and re-lock it) or physically on the recorder by double-clicking on the blue button.</p>
+<section id="start-maxlab-live-scope" class="level2">
+<h2 class="anchored" data-anchor-id="start-maxlab-live-scope">Start MaxLab Live Scope</h2>
+<p>If programs are still open from a previous user, close everything and start fresh.</p>
+<ol type="1">
+<li>Connect to the <strong>MaxTwo recorder</strong> by clicking on <strong>“Server”</strong> on the desktop.</li>
+<li>Open <strong>MaxLab Live</strong>, then start the program called <strong>“Scope”</strong>.</li>
+</ol>
+<section id="initiate-the-plate" class="level3">
+<h3 class="anchored" data-anchor-id="initiate-the-plate">Initiate the Plate</h3>
+<ul>
+<li><p>Click <strong>“Initiate”</strong> (near the bottom-left corner).</p></li>
+<li><p><strong>24-well plates:</strong><br>
+The plate ID is detected automatically. Always verify that the detected ID matches your plate, as in rare cases the previously recorded plate may be shown.</p></li>
+<li><p><strong>6-well plates:</strong><br>
+Enter your plate ID manually.</p></li>
+</ul>
+</section>
+<section id="set-and-check-the-offset" class="level3">
+<h3 class="anchored" data-anchor-id="set-and-check-the-offset">Set and Check the Offset</h3>
+<ul>
+<li>Click <strong>“Offset”</strong>.</li>
+<li>Observe the <strong>Offset Histogram</strong> in the upper-right corner.</li>
+</ul>
+<p>A <strong>narrow histogram</strong> indicates that the plate is properly connected.</p>
+<p>If the histogram is very wide:</p>
+<ul>
+<li>Reseat the plate via MaxLab:
+<ul>
+<li>Click the icon resembling the MaxTwo recorder</li>
+<li>Select <strong>Unlock Plate</strong>, then re-lock it</li>
+</ul></li>
+<li>Alternatively, reseat the plate physically by <strong>double-clicking the blue button</strong> on the recorder.</li>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <div class="quarto-figure quarto-figure-center">
@@ -288,36 +343,46 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>MaxLab Scope GUI</figcaption>
 </figure>
 </div>
-<p>Now you are ready to start a recording. Happy Spiking!!</p>
+<p>You are now ready to start a recording.<br>
+<strong>Happy spiking!</strong></p>
 </section>
 </section>
 <section id="troubleshooting" class="level2">
-<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting:</h2>
-<section id="i-cannot-see-the-citrix-icon-of-the-linux-computer" class="level4">
-<h4 class="anchored" data-anchor-id="i-cannot-see-the-citrix-icon-of-the-linux-computer">I cannot see the Citrix Icon of the Linux Computer:</h4>
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
+<section id="i-cannot-see-the-citrix-icon-for-the-linux-computer" class="level3">
+<h3 class="anchored" data-anchor-id="i-cannot-see-the-citrix-icon-for-the-linux-computer">I cannot see the Citrix icon for the Linux computer</h3>
 <ul>
-<li><p>Refresh Apps on Citrix (Wheel Cog Icon, upper right corner)</p></li>
-<li><p>If problems persists, restart your computer and make sure you are on the newest Citrix version.</p></li>
-<li><p>Try to connect to the browser version of <a href="https://vdi.core.uzh.ch/logon/LogonPoint/index.html">Citrix</a>.</p></li>
-<li><p>Contact a staff member or the IT department of the ZMB.</p></li>
+<li>Refresh apps in Citrix (wheel cog icon, upper right corner)</li>
+<li>Restart your computer and make sure you are using the latest Citrix version</li>
+<li>Try connecting via the browser-based version of<br>
+<a href="https://vdi.core.uzh.ch/logon/LogonPoint/index.html">Citrix</a></li>
+<li>Contact a staff member or the ZMB IT department</li>
 </ul>
 </section>
-<section id="the-linux-computer-is-very-slow-to-respond-or-the-display-does-not-show-the-whole-window" class="level4">
-<h4 class="anchored" data-anchor-id="the-linux-computer-is-very-slow-to-respond-or-the-display-does-not-show-the-whole-window">The Linux Computer is very slow to respond or the display does not show the whole window:</h4>
-<p>This is a known issue with Macs and/or large monitor displays (4K monitors). Contact staff for workaround.</p>
+<section id="the-linux-computer-is-very-slow-or-the-display-does-not-show-the-whole-window" class="level3">
+<h3 class="anchored" data-anchor-id="the-linux-computer-is-very-slow-or-the-display-does-not-show-the-whole-window">The Linux computer is very slow or the display does not show the whole window</h3>
+<p>This is a known issue on <strong>macOS</strong> and/or <strong>large (4K) displays</strong>.<br>
+Contact staff for available workarounds.</p>
 </section>
-<section id="i-got-thrown-out-of-the-program-and-now-it-says-that-number-of-sessions-have-been-reached" class="level4">
-<h4 class="anchored" data-anchor-id="i-got-thrown-out-of-the-program-and-now-it-says-that-number-of-sessions-have-been-reached">I got thrown out of the program and now it says that Number of Sessions have been reached:</h4>
-<p>Close down Citrix and wait 5mins before reconnecting. As an alternative, use RDP directly to connect to the Linux Computer, especially if this problem persists or repeats itself.</p>
+<section id="i-was-disconnected-and-now-see-number-of-sessions-reached" class="level3">
+<h3 class="anchored" data-anchor-id="i-was-disconnected-and-now-see-number-of-sessions-reached">I was disconnected and now see “Number of sessions reached”</h3>
+<p>Close Citrix completely and wait <strong>5 minutes</strong> before reconnecting.</p>
+<p>If the problem persists or repeats, use <strong>direct RDP access</strong> to connect to the Linux computer.</p>
 </section>
-<section id="i-cannot-set-the-offset-or-the-plate-id-is-wrong-24-well-plate-only" class="level4">
-<h4 class="anchored" data-anchor-id="i-cannot-set-the-offset-or-the-plate-id-is-wrong-24-well-plate-only">I cannot set the Offset or the Plate ID is wrong (24-well plate only):</h4>
+<section id="i-cannot-set-the-offset-or-the-plate-id-is-wrong-24-well-plates-only" class="level3">
+<h3 class="anchored" data-anchor-id="i-cannot-set-the-offset-or-the-plate-id-is-wrong-24-well-plates-only">I cannot set the Offset or the plate ID is wrong (24-well plates only)</h3>
 <ul>
-<li><p>Close MaxLab and Server connection, restart and reconnect.</p></li>
-<li><p>If problem persists, reseat the plate in the MaxTwo Recorder.</p>
+<li><p>Close <strong>MaxLab</strong> and the <strong>Server connection</strong>, then restart and reconnect.</p></li>
+<li><p>If the problem persists, reseat the plate in the MaxTwo recorder:</p>
 <ul>
-<li><p>This can be done from MaxLab. Click on the icon that looks like the MaxTwo recorder, then click on Unlock Plate and re-lock it. You might need to close and reopen the program one more time.</p></li>
-<li><p>Alternatively, do it physically on the recorder by double-click on the button.</p></li>
+<li>From MaxLab:
+<ul>
+<li>Click the recorder icon</li>
+<li>Select <strong>Unlock Plate</strong>, then re-lock it<br>
+</li>
+<li>You may need to close and reopen MaxLab once more</li>
+</ul></li>
+<li>Or physically on the recorder by <strong>double-clicking the blue button</strong></li>
 </ul></li>
 </ul>
 

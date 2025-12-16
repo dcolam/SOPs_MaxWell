@@ -7,56 +7,105 @@ editor: visual
 
 ## Your First Recording
 
-At this point, you should have done your first training with a staff member, so if possible refer to the specific recording strategies discussed in the training. This tutorial serves as a basic reminder of the most basic workflow, an activity scan and network assay.
+At this point, you should have completed your initial training with a staff member. Whenever possible, refer to the specific recording strategies discussed during that training.
 
-### Typical Experimental Workflow
+This tutorial serves as a basic reminder of the core workflow, focusing on an activity scan and a network assay.
 
-\`\`\`{mermaid}
+## Typical Experimental Workflow
+
+```{mermaid}
 flowchart LR
-A(Seed Cells) --\> B()
-B --\> C{Decision}
-C --\> D\[Result one\]
-C --\> E\[Result two\]
-\`\`\`
+A(Seed Cells) --> B(Culture)
+B --> C{Activity Scans}
+C --> D[Network Assay]
+D --> C
+```
 
-### Assess whether you have biological meaningful signal
+## Assess Whether You Have Biologically Meaningful Signals
 
-At the beginning of your experimental journey, it might be difficult to evaluate whether you have biologically meaningful signal.
+At the beginning of your experimental journey, it might be difficult to evaluate whether you are observing biologically meaningful signals.
 
 ### The Activity Scan Assay
 
-As a reminder, an activity scan assay is necessary to determine the most active areas of your chips. If your cells are not as active or still very young, you might need to perform an activity scan every single session. In general, it is recommended to lose a little bit of spatial resolution to gain more temporal resolution, especially if your cells are not very active.
+As a reminder, an activity scan assay is necessary to determine the most active areas of your chip. If your cells are still young or not very active, you may need to perform an activity scan during every session.
 
-Go to the Assay Tab and make sure to change the project to your specific project (IMPORTANT!!). Open a new Assay and choose Activity Scan. As a start, I would recommend to choose the Checker Board configuration and scan for at least 90s per configuration. This is a good compromise between temporal and spatial resolution. Of course, feel free to adjust the settings to your liking by either in- or decreasing the spatial resolution (e.g. Full Scan) or scanning time (sometimes, with highly connected mature neuronal networks, cells become active only in infrequent bursts, in which case the timing should be increased to 120-180s to avoid banding artifacts due to inactivity).
+In general, it is recommended to sacrifice some spatial resolution in order to gain temporal resolution, especially when working with low-activity cultures.
 
-A whole Activity Assay might take up the majority of your session. If your cells are in a more matured state (typically after they start bursting) you might not need to repeat the Activity Assays every session and you could reuse the same map for several recordings.
+To set up an Activity Scan:
+
+- Go to the **Assay** tab.
+- Change the **Project** to your specific project (**IMPORTANT**).
+- Open a new assay and choose **Activity Scan**.
+- Select the **Checkerboard** configuration.
+- Scan for at least **90 seconds per configuration**.
+
+This setup provides a good compromise between temporal and spatial resolution. You can adjust the settings by increasing or decreasing the spatial resolution (e.g. **Full Scan**) or the scan duration.
+
+In some cases—especially with highly connected, mature neuronal networks—cells may become active only in infrequent bursts. In these situations, increasing the scan duration to **120–180 seconds** can help avoid banding artifacts caused by inactivity.
+
+A full Activity Scan may take up most of your session time. Once your cultures reach a more mature state (typically after bursting begins), you may not need to repeat the Activity Scan every session and can reuse the same activity map for multiple recordings.
 
 ### The Network Assay
 
-A network assay records a specific configuration (typically the results of an Activity Assay) for a pre-defined period of time. Typically and depending on the activity of your cells, 5 to 10min are sufficient.
+A Network Assay records a specific electrode configuration—typically derived from the results of an Activity Scan—for a predefined period of time. Depending on the activity level of your cells, a recording duration of **5–10 minutes** is usually sufficient.
 
-Here, you will typically need the result of an Activity Assay to choose the areas of interest to perform the Network Assay. Experiment with different configurations but stick to a specific one once you are happy with a type of configuration. We typically use Feature Maximization to always have the maximum number of electrodes (around 1020).
+You will typically use the results of an Activity Scan to select areas of interest for the Network Assay. Experiment with different configurations initially, but once you are satisfied, it is recommended to remain consistent across sessions.
 
-You can queue the Network Assay recording to take place right after your Activity Scan, just make sure that it is configured to take the newest Activity Scan results (which will appear black it is still running).
+We typically use **Feature Maximization** to include the maximum number of electrodes (approximately **1020 electrodes**).
 
-### Advanced Topic - Repeated Network Assays with Waiting Blocks
+You can queue the Network Assay to start immediately after the Activity Scan. Make sure that the Network Assay is configured to use the **newest Activity Scan results**, which will appear **black** while the scan is still running.
 
-For pharmacological treatments, you might want to perform repeated measurements spaced out evenly. MaxWell does not support this out of the box but there is a work-around to still perform it in an unsupervised way. Please, still make sure that you book the corresponding time slots!
+### Advanced Topic: Repeated Network Assays with Waiting Blocks
 
-##### Waiting Blocks - Record Assay
+For pharmacological treatments, you may want to perform repeated measurements that are evenly spaced in time. MaxWell does not support this functionality directly, but a workaround allows you to perform repeated recordings in an unsupervised manner.
 
-These are technically speaking not waiting blocks but they can be used as such. To configure one, choose a Record Assay and configure it to have a short record time (typically 1min). Then choose as an in-between cycle half of the wished waiting time (so, 30min for 1hr wait block), and repeat it for 3 cycles. Check on the "Estimate Time" button if the waiting block is correct.
+Make sure to book the corresponding time slots to accommodate the full sequence.
 
-IMPORTANT: Make sure you choose any configuration, a blank one will skip the waiting block. You can just click on "Choose Current Configuration".
+#### Waiting Blocks Using Record Assays
 
-We can take advantage of the queuing of assays. By alternating Network Assays with Waiting Blocks (Record Assays), we can space out recordings and have repeated measurements. You will need to open new assays and start them in the order you want to have them run.
+Although these are technically not true waiting blocks, **Record Assays** can be used to simulate them.
+
+To configure a waiting block:
+
+- Create a **Record Assay**.
+- Set a short recording duration (typically **1 minute**).
+- Set the *in-between cycle time* to **half of the desired waiting period**  
+  (e.g. 30 minutes for a 1-hour waiting block).
+- Repeat the assay for **3 cycles**.
+- Use the **Estimate Time** button to verify that the waiting block is configured correctly.
+
+::: callout-warning
+**IMPORTANT**
+
+You must select a configuration for the **Record Assay**. If the configuration is left blank, the waiting block will be skipped.
+
+You can simply click **“Choose Current Configuration.”**
+:::
+
+By alternating **Network Assays** with **Waiting Blocks (Record Assays)**, you can space out recordings and perform repeated measurements. You will need to open and queue the assays in the exact order in which you want them to run.
 
 ## Frequently Asked Questions
 
-#### How do I know that my cells are fine?
+### How do I know that my cells are healthy?
 
-This might be difficult to assess, since cells are not visible on the surface fo the sensors. We recommend to plate sister cultures in parallel on glass coverslips to have a general idea of the health of your cultures. In case of older cultures, you might start seeing a matt coating on the surface. If the media changes color to a more orange hue is also an indication that your cells are still metabolically active. Make sure, this is not due to a fungal or bacterial contamination which turns the media very quickly yellow with a cloudy layer on top of the sensor area. If this is the case, terminate the experiment immediately to avoid cross-contaminations, especially if you keep your cells in our cell culture facilities.
+This can be difficult to assess, as cells are not visible on the surface of the sensors. We recommend plating **sister cultures** in parallel on glass coverslips to obtain a general indication of culture health.
 
-#### When can I expect neuronal activity in my cells?
+In older cultures, you may start to see a **matte coating** on the sensor surface. A gradual change in media color toward a more **orange hue** is also an indication that cells are still metabolically active.
 
-This is highly dependent on your specific cells and even culturing conditions. Empirically, we start seeing neuronal activity from Day 14-18 for iPSC-derived neuronal cultures (with forward programming) and start of bursting activity from Day 18 up to 35. For primary neuronal cultures from rodents, activity starts much earlier from Day7 and start of bursting typically around Day 10-14. Your mileage may vary.
+Make sure that these changes are not caused by **fungal or bacterial contamination**, which typically turns the media **bright yellow** very quickly and produces a **cloudy layer** on top of the sensor area. If contamination is suspected, terminate the experiment immediately to avoid cross-contamination—especially when using shared cell culture facilities.
+
+### When can I expect neuronal activity in my cells?
+
+This depends strongly on the cell type and culturing conditions.
+
+Empirically:
+
+- **iPSC-derived neuronal cultures (forward programming):**
+  - Initial activity: **Day 14–18**
+  - Onset of bursting: **Day 18–35**
+
+- **Primary rodent neuronal cultures:**
+  - Initial activity: **~Day 7**
+  - Onset of bursting: **Day 10–14**
+
+These timeframes are approximate, and results may vary depending on experimental conditions.

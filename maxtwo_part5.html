@@ -8,7 +8,7 @@
 
 <meta name="author" content="David Colameo">
 
-<title>Setup Recordings – HD-MEA Tutorials for e-phac Users</title>
+<title>MaxWell Guides – HD-MEA Tutorials for e-phac Users</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./maxtwo_part3.html" rel="next">
-<link href="./maxtwo_part1.html" rel="prev">
+<link href="./maxtwo_part4.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -70,9 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -134,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./maxtwo_part2.html">Setup Recordings</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./maxtwo_part5.html">MaxWell Guides</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -160,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./maxtwo_part2.html" class="sidebar-item-text sidebar-link active">
+  <a href="./maxtwo_part2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Setup Recordings</span></a>
   </div>
 </li>
@@ -178,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./maxtwo_part5.html" class="sidebar-item-text sidebar-link">
+  <a href="./maxtwo_part5.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">MaxWell Guides</span></a>
   </div>
 </li>
@@ -192,18 +188,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#your-first-recording" id="toc-your-first-recording" class="nav-link active" data-scroll-target="#your-first-recording">Your First Recording</a></li>
-  <li><a href="#typical-experimental-workflow" id="toc-typical-experimental-workflow" class="nav-link" data-scroll-target="#typical-experimental-workflow">Typical Experimental Workflow</a></li>
-  <li><a href="#assess-whether-you-have-biologically-meaningful-signals" id="toc-assess-whether-you-have-biologically-meaningful-signals" class="nav-link" data-scroll-target="#assess-whether-you-have-biologically-meaningful-signals">Assess Whether You Have Biologically Meaningful Signals</a>
+  <li><a href="#links-to-maxwells-protocols-and-documentation" id="toc-links-to-maxwells-protocols-and-documentation" class="nav-link active" data-scroll-target="#links-to-maxwells-protocols-and-documentation">Links to MaxWell’s Protocols and Documentation</a>
   <ul class="collapse">
-  <li><a href="#the-activity-scan-assay" id="toc-the-activity-scan-assay" class="nav-link" data-scroll-target="#the-activity-scan-assay">The Activity Scan Assay</a></li>
-  <li><a href="#the-network-assay" id="toc-the-network-assay" class="nav-link" data-scroll-target="#the-network-assay">The Network Assay</a></li>
-  <li><a href="#advanced-topic-repeated-network-assays-with-waiting-blocks" id="toc-advanced-topic-repeated-network-assays-with-waiting-blocks" class="nav-link" data-scroll-target="#advanced-topic-repeated-network-assays-with-waiting-blocks">Advanced Topic: Repeated Network Assays with Waiting Blocks</a></li>
-  </ul></li>
-  <li><a href="#frequently-asked-questions" id="toc-frequently-asked-questions" class="nav-link" data-scroll-target="#frequently-asked-questions">Frequently Asked Questions</a>
-  <ul class="collapse">
-  <li><a href="#how-do-i-know-that-my-cells-are-healthy" id="toc-how-do-i-know-that-my-cells-are-healthy" class="nav-link" data-scroll-target="#how-do-i-know-that-my-cells-are-healthy">How do I know that my cells are healthy?</a></li>
-  <li><a href="#when-can-i-expect-neuronal-activity-in-my-cells" id="toc-when-can-i-expect-neuronal-activity-in-my-cells" class="nav-link" data-scroll-target="#when-can-i-expect-neuronal-activity-in-my-cells">When can I expect neuronal activity in my cells?</a></li>
+  <li><a href="#documentation-for-maxlab" id="toc-documentation-for-maxlab" class="nav-link" data-scroll-target="#documentation-for-maxlab">Documentation for MaxLab</a></li>
+  <li><a href="#documentation-for-maxone-users" id="toc-documentation-for-maxone-users" class="nav-link" data-scroll-target="#documentation-for-maxone-users">Documentation for MaxOne users</a></li>
+  <li><a href="#documentation-for-maxtwo-users" id="toc-documentation-for-maxtwo-users" class="nav-link" data-scroll-target="#documentation-for-maxtwo-users">Documentation for MaxTwo users</a></li>
+  <li><a href="#protocols" id="toc-protocols" class="nav-link" data-scroll-target="#protocols">Protocols</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -213,7 +203,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Setup Recordings</h1>
+<h1 class="title">MaxWell Guides</h1>
 </div>
 
 
@@ -236,116 +226,41 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="your-first-recording" class="level2">
-<h2 class="anchored" data-anchor-id="your-first-recording">Your First Recording</h2>
-<p>At this point, you should have completed your initial training with a staff member. Whenever possible, refer to the specific recording strategies discussed during that training.</p>
-<p>This tutorial serves as a basic reminder of the core workflow, focusing on an activity scan and a network assay.</p>
-</section>
-<section id="typical-experimental-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="typical-experimental-workflow">Typical Experimental Workflow</h2>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-A(Seed Cells) --&gt; B(Culture)
-B --&gt; C{Activity Scans}
-C --&gt; D[Network Assay]
-D --&gt; C
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="assess-whether-you-have-biologically-meaningful-signals" class="level2">
-<h2 class="anchored" data-anchor-id="assess-whether-you-have-biologically-meaningful-signals">Assess Whether You Have Biologically Meaningful Signals</h2>
-<p>At the beginning of your experimental journey, it might be difficult to evaluate whether you are observing biologically meaningful signals.</p>
-<section id="the-activity-scan-assay" class="level3">
-<h3 class="anchored" data-anchor-id="the-activity-scan-assay">The Activity Scan Assay</h3>
-<p>As a reminder, an activity scan assay is necessary to determine the most active areas of your chip. If your cells are still young or not very active, you may need to perform an activity scan during every session.</p>
-<p>In general, it is recommended to sacrifice some spatial resolution in order to gain temporal resolution, especially when working with low-activity cultures.</p>
-<p>To set up an Activity Scan:</p>
+<section id="links-to-maxwells-protocols-and-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="links-to-maxwells-protocols-and-documentation">Links to MaxWell’s Protocols and Documentation</h2>
+<p>Access to important documentation for recommended software, hardware, and protocols:</p>
+<p><strong>Online:</strong> View the most up-to-date document versions.</p>
+<section id="documentation-for-maxlab" class="level3">
+<h3 class="anchored" data-anchor-id="documentation-for-maxlab">Documentation for MaxLab</h3>
 <ul>
-<li>Go to the <strong>Assay</strong> tab.</li>
-<li>Change the <strong>Project</strong> to your specific project (<strong>IMPORTANT</strong>).</li>
-<li>Open a new assay and choose <strong>Activity Scan</strong>.</li>
-<li>Select the <strong>Checkerboard</strong> configuration.</li>
-<li>Scan for at least <strong>90 seconds per configuration</strong>.</li>
+<li><p><a href="https://share.mxwbio.com/d/ec016d3ece984afaa4a5/">Live MaxLab Live Manual</a></p></li>
+<li><p><a href="https://share.mxwbio.com/d/5fd3d31ced4f41a48354/">Electrical Stimulation Guide</a></p></li>
 </ul>
-<p>This setup provides a good compromise between temporal and spatial resolution. You can adjust the settings by increasing or decreasing the spatial resolution (e.g.&nbsp;<strong>Full Scan</strong>) or the scan duration.</p>
-<p>In some cases—especially with highly connected, mature neuronal networks—cells may become active only in infrequent bursts. In these situations, increasing the scan duration to <strong>120–180 seconds</strong> can help avoid banding artifacts caused by inactivity.</p>
-<p>A full Activity Scan may take up most of your session time. Once your cultures reach a more mature state (typically after bursting begins), you may not need to repeat the Activity Scan every session and can reuse the same activity map for multiple recordings.</p>
 </section>
-<section id="the-network-assay" class="level3">
-<h3 class="anchored" data-anchor-id="the-network-assay">The Network Assay</h3>
-<p>A Network Assay records a specific electrode configuration—typically derived from the results of an Activity Scan—for a predefined period of time. Depending on the activity level of your cells, a recording duration of <strong>5–10 minutes</strong> is usually sufficient.</p>
-<p>You will typically use the results of an Activity Scan to select areas of interest for the Network Assay. Experiment with different configurations initially, but once you are satisfied, it is recommended to remain consistent across sessions.</p>
-<p>We typically use <strong>Feature Maximization</strong> to include the maximum number of electrodes (approximately <strong>1020 electrodes</strong>).</p>
-<p>You can queue the Network Assay to start immediately after the Activity Scan. Make sure that the Network Assay is configured to use the <strong>newest Activity Scan results</strong>, which will appear <strong>black</strong> while the scan is still running.</p>
-</section>
-<section id="advanced-topic-repeated-network-assays-with-waiting-blocks" class="level3">
-<h3 class="anchored" data-anchor-id="advanced-topic-repeated-network-assays-with-waiting-blocks">Advanced Topic: Repeated Network Assays with Waiting Blocks</h3>
-<p>For pharmacological treatments, you may want to perform repeated measurements that are evenly spaced in time. MaxWell does not support this functionality directly, but a workaround allows you to perform repeated recordings in an unsupervised manner.</p>
-<p>Make sure to book the corresponding time slots to accommodate the full sequence.</p>
-<section id="waiting-blocks-using-record-assays" class="level4">
-<h4 class="anchored" data-anchor-id="waiting-blocks-using-record-assays">Waiting Blocks Using Record Assays</h4>
-<p>Although these are technically not true waiting blocks, <strong>Record Assays</strong> can be used to simulate them.</p>
-<p>To configure a waiting block:</p>
+<section id="documentation-for-maxone-users" class="level3">
+<h3 class="anchored" data-anchor-id="documentation-for-maxone-users">Documentation for MaxOne users</h3>
 <ul>
-<li>Create a <strong>Record Assay</strong>.</li>
-<li>Set a short recording duration (typically <strong>1 minute</strong>).</li>
-<li>Set the <em>in-between cycle time</em> to <strong>half of the desired waiting period</strong><br>
-(e.g.&nbsp;30 minutes for a 1-hour waiting block).</li>
-<li>Repeat the assay for <strong>3 cycles</strong>.</li>
-<li>Use the <strong>Estimate Time</strong> button to verify that the waiting block is configured correctly.</li>
+<li><p><a href="https://share.mxwbio.com/d/5a6104dd7c13443b8694/">MaxOne Guide</a></p></li>
+<li><p><a href="https://share.mxwbio.com/d/ddf140139e3349229d33/">MaxOne+ and MaxOne Handling, Cleaning, and Storage Recommendations</a></p></li>
+<li><p><a href="https://share.mxwbio.com/d/642b9973a0654086be7f/">MaxOne Digital Input Extension Board Instructions</a></p></li>
 </ul>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>IMPORTANT</strong></p>
-<p>You must select a configuration for the <strong>Record Assay</strong>. If the configuration is left blank, the waiting block will be skipped.</p>
-<p>You can simply click <strong>“Choose Current Configuration.”</strong></p>
-</div>
-</div>
-<p>By alternating <strong>Network Assays</strong> with <strong>Waiting Blocks (Record Assays)</strong>, you can space out recordings and perform repeated measurements. You will need to open and queue the assays in the exact order in which you want them to run.</p>
 </section>
-</section>
-</section>
-<section id="frequently-asked-questions" class="level2">
-<h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently Asked Questions</h2>
-<section id="how-do-i-know-that-my-cells-are-healthy" class="level3">
-<h3 class="anchored" data-anchor-id="how-do-i-know-that-my-cells-are-healthy">How do I know that my cells are healthy?</h3>
-<p>This can be difficult to assess, as cells are not visible on the surface of the sensors. We recommend plating <strong>sister cultures</strong> in parallel on glass coverslips to obtain a general indication of culture health.</p>
-<p>In older cultures, you may start to see a <strong>matte coating</strong> on the sensor surface. A gradual change in media color toward a more <strong>orange hue</strong> is also an indication that cells are still metabolically active.</p>
-<p>Make sure that these changes are not caused by <strong>fungal or bacterial contamination</strong>, which typically turns the media <strong>bright yellow</strong> very quickly and produces a <strong>cloudy layer</strong> on top of the sensor area. If contamination is suspected, terminate the experiment immediately to avoid cross-contamination—especially when using shared cell culture facilities.</p>
-</section>
-<section id="when-can-i-expect-neuronal-activity-in-my-cells" class="level3">
-<h3 class="anchored" data-anchor-id="when-can-i-expect-neuronal-activity-in-my-cells">When can I expect neuronal activity in my cells?</h3>
-<p>This depends strongly on the cell type and culturing conditions.</p>
-<p>Empirically:</p>
+<section id="documentation-for-maxtwo-users" class="level3">
+<h3 class="anchored" data-anchor-id="documentation-for-maxtwo-users">Documentation for MaxTwo users</h3>
 <ul>
-<li><strong>iPSC-derived neuronal cultures (forward programming):</strong>
-<ul>
-<li>Initial activity: <strong>Day 14–18</strong></li>
-<li>Onset of bursting: <strong>Day 18–35</strong></li>
-</ul></li>
-<li><strong>Primary rodent neuronal cultures:</strong>
-<ul>
-<li>Initial activity: <strong>~Day 7</strong></li>
-<li>Onset of bursting: <strong>Day 10–14</strong></li>
-</ul></li>
+<li><p><a href="https://share.mxwbio.com/d/3f8fba5bb818473a9089/">MaxTwo Guide</a></p></li>
+<li><p><a href="https://share.mxwbio.com/d/c6c8188a3140421b812f/">MaxTwo Well Plate Handling</a></p></li>
 </ul>
-<p>These timeframes are approximate, and results may vary depending on experimental conditions.</p>
+</section>
+<section id="protocols" class="level3">
+<h3 class="anchored" data-anchor-id="protocols">Protocols</h3>
+<ul>
+<li><p><a href="https://share.mxwbio.com/d/f9965b40dca24b828ed9/">MaxOne+ and MaxOne Neuronal Cell Plating Protocol</a></p></li>
+<li><p><a href="https://share.mxwbio.com/d/27fc7bd4db744605b8f3/">MaxOne+ and MaxOne Brain Organoid Plating Protocol</a></p></li>
+<li><p><a href="https://share.mxwbio.com/d/58d9dc2139a04820bd20/">MaxTwo 6-Well Plate Neuronal Cell Plating Protocol</a></p></li>
+<li><p><a href="https://share.mxwbio.com/d/85eada76bde74adc9849/">MaxTwo 24-Well Plate Neuronal Cell Plating Protocol</a></p></li>
+<li><p><a href="https://share.mxwbio.com/d/044a31a0c6f64357a31f/">MaxTwo Brain Organoid Plating Protocol</a></p></li>
+</ul>
 
 
 </section>
@@ -753,14 +668,11 @@ Warning
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./maxtwo_part1.html" class="pagination-link" aria-label="Access Remote Computer">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Access Remote Computer</span>
+      <a href="./maxtwo_part4.html" class="pagination-link" aria-label="Analysis and Data Export">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Analysis and Data Export</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./maxtwo_part3.html" class="pagination-link" aria-label="How to Seed Cells">
-        <span class="nav-page-text">How to Seed Cells</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

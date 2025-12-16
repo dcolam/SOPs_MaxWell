@@ -7,46 +7,101 @@ editor: visual
 
 ## How to Prepare the Plate and Seed Cells
 
-This is a very short tutorial on how you should handle the MaxWell plates and prepare them in order to seed your cells. Please, carefully read also the official MaxWell protocols. These are just our recommendations based on empirical data across many different project that we encountered at the facility.
+This is a short tutorial describing how to handle MaxWell plates and prepare them for cell seeding. Please make sure to also read the **official MaxWell protocols** carefully. The procedures described here are **recommendations based on empirical experience** across many different projects encountered at the facility.
 
-There is no guarantee that it will work with these protocols and there might be some optimization steps necessary to find the right conditions for your cells.
+There is no guarantee that these protocols will work optimally for every cell type, and additional optimization steps may be required to identify the best conditions for your specific cells.
 
-### 1. Prepare the Plates:
+## 1. Prepare the Plates
 
-#### For 6-well plates:
+### For 6-well plates
 
-If you own a 6-well plate, you will need to first pre-treat the plates and sterilize them. The pre-treatment with 1% Terg-a-zyme will make the surface of the sensor more hydrophilic. After preparing the 1% Terg-a-zyme in sterile ddH2O water, you can fill the chips and incubate it for 2-3 hours (up to over-night) at room temperature. Afterwards, you should thoroughly wash/rinse the plates with ddH2O (typically 3-4 times with 2-3ml).
+If you are using a 6-well plate, the plate must first be **pre-treated and sterilized**.
 
-For sterilization, spray down all other surfaces of the plate thoroughly with 70% EtOH, place your plates under a sterile environment (cell culture hood) and fill all wells and places around the wells with cell culture grade 70% EtOH. Make sure that the gold pins in at the bottom of the plates are as dry as possible as they corrode easily which will affect the recordings. Incubate the 70% for at least 30min under the hood (do not use UV-light as it can affect the longevity of the electronics).
+#### Pre-treatment
 
-Afterwards, rinse the plates with ddH2O 3-4 times and let it dry under the hood till first use.
+Pre-treatment with **1% Terg-a-zyme** increases the hydrophilicity of the sensor surface.
 
-#### For 24-well plates:
+- Prepare a **1% Terg-a-zyme** solution in sterile ddH₂O.
+- Fill the chips and incubate for **2–3 hours** (up to overnight) at room temperature.
+- Thoroughly rinse the plates with sterile ddH₂O **3–4 times** using **2–3 mL** per rinse.
 
-MaxWell ships the 24-well plates already sterile, so you can directly continue with the pre-treatment steps. If you are re-using the plate (cell-free) you can perform the same steps as described above.
+#### Sterilization
 
-### 2. Pre-conditioning
+- Spray all external surfaces of the plate thoroughly with **70% ethanol**.
+- Place the plate in a sterile environment (cell culture hood).
+- Fill all wells and surrounding areas with **cell-culture-grade 70% ethanol**.
 
-It is recommended to perform a pre-condition of the plates, especially before the first use. This is done by incubating the sterilized plates with sterile media in your incubator for 1-2 days. No need to perform a washing step before coating.
+Make sure the **gold pins at the bottom of the plate remain as dry as possible**, as they corrode easily and corrosion will negatively affect recordings.
 
-### 3. Coating
+- Incubate with 70% ethanol for **at least 30 minutes** under the hood.
+- **Do not use UV light**, as this can reduce the longevity of the electronics.
 
-Before seeding your cells, the surface of the sensors need to be coated in order to provide a good surface for your cells to adhere. This is especially true for the surfaces of the HD-MEA sensors as they are smoother than typical cell-culture grade plastic-ware.
+After sterilization:
 
-We always recommend to try the typical coating protocols that work with your type of cells, especially if you have experience seeding your cells on glass coverslips. If you normally don't coat your surfaces before seeding your cells, we recommend as a starting point to coat the surfaces first with Poly-D (or L)-Lysine (PDL or PLL) overnight in an incubator, followed by a Laminin (20ng/uL) coating of 1-hr in the incubator before seeding your cells. Wash with ddH2O or PBS in-between steps.
+- Rinse the plates with sterile ddH₂O **3–4 times**.
+- Allow the plates to dry under the hood until first use.
 
-In order to save Laminin solution, you can just coat the sensor area directly. Make sure to cover the whole area (\~50uL). It is also recommended by many to not dry out the surfaces after coating.
+### For 24-well plates
 
-### 4. Seeding Cells
+MaxWell ships 24-well plates **pre-sterilized**, so you can proceed directly to the pre-conditioning step.
 
-After coating, your plates are ready to be seeded with cells. It is recommended to have a pilot experiment were different number of cells are seeded at different concentrations. Typically, we seed from 50'000-150'000 per well on the sensor area. The sensor area is covered by around 50uL of solution, so concentrate your cells accordingly. After seeding, place the plates back into the incubator for 1hr (no longer, as you risk to evaporate the 50uL), followed by carefully filling up the well (\~500-600ul per well (24-well), 1-1.5ml per well (6-well)).
+If you are **re-using a plate (cell-free)**, follow the same pre-treatment and sterilization steps described for 6-well plates.
 
-Proceed with normal cell culture routine.
+## 2. Pre-conditioning
 
-## Tipps and Tricks
+Pre-conditioning is recommended, especially before first use.
 
--   NEVER touch the sensor area with any pipette tips, as you may risk to damage the electronics components. To aspirate any liquids, carefully place the aspirator on the corner of the sensor and slightly tilt the plate.
+- Incubate the sterilized plates with **sterile culture media** in the incubator for **1–2 days**.
+- No washing step is required before coating.
 
-<!-- -->
+## 3. Coating
 
--   When placing 50uL of solution in the sensor area, make sure to dry out the immediate area around the sensor. Any liquid connection to wet spots outside the sensor area will result in your solution to spread and not fully cover your sensor area. Always make sure, you can see a bubble of liquid over the sensor area. This is crucial to a successful cell seeding as you risk to spread out your cells around instead of the sensor area.
+Before seeding, the sensor surface must be coated to promote cell adhesion. This is particularly important for **HD-MEA sensors**, as their surface is smoother than standard cell-culture plastic.
+
+We recommend starting with coating protocols that are already known to work for your cell type, especially if you have experience culturing them on glass coverslips.
+
+If you do not normally coat surfaces, the following is a recommended starting protocol:
+
+- Coat with **Poly-D-Lysine (PDL) or Poly-L-Lysine (PLL)** overnight in the incubator.
+- Follow with **Laminin (20 ng/µL)** coating for **1 hour** in the incubator.
+- Wash with **ddH₂O or PBS** between coating steps.
+
+To conserve Laminin, you may coat **only the sensor area**:
+
+- Ensure the entire sensor area is covered (approximately **50 µL**).
+- It is generally recommended **not to let the surface dry** after coating.
+
+## 4. Seeding Cells
+
+After coating, the plates are ready for cell seeding.
+
+We strongly recommend performing a **pilot experiment** using different cell numbers and concentrations.
+
+Typical seeding densities:
+- **50,000–150,000 cells per well** on the sensor area
+
+Key considerations:
+
+- The sensor area is covered with approximately **50 µL** of solution.
+- Concentrate your cell suspension accordingly.
+- After seeding, place the plate in the incubator for **1 hour**.
+  - Do **not exceed 1 hour**, as evaporation of the 50 µL can occur.
+
+After incubation, carefully fill the wells:
+
+- **24-well plates:** ~**500–600 µL** per well
+- **6-well plates:** **1–1.5 mL** per well
+
+Proceed with your normal cell culture routine.
+
+## Tips and Tricks
+
+- **Never touch the sensor area with pipette tips**, as this may damage the electronic components.  
+  When aspirating liquid, place the aspirator carefully at the corner of the sensor area and slightly tilt the plate.
+
+- When placing **50 µL** of solution on the sensor area, make sure the surrounding area is dry.  
+  Any liquid connection to wet regions outside the sensor area will cause the droplet to spread and may prevent full coverage of the sensor.
+
+Always verify that you can see a **distinct liquid bubble** over the sensor area. This is critical for successful seeding, as spreading will cause cells to distribute outside the sensor instead of settling on it.
+- If you notice that the liquid is spreading too much, try reducing the volume slightly (e.g., to **40 µL**).  
+  Alternatively, you can try to **absorb excess liquid** from the corners of the sensor area using a sterile tissue or pipette tip (without touching the sensor surface).

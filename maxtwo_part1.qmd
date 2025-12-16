@@ -5,84 +5,122 @@ format: html
 editor: visual
 ---
 
-## Welcome To MaxTwo
+## Welcome to MaxTwo
 
-This is a short tutorial describing how to access and setup the MaxTwo System. You will need to have access to our remote Linux Computer and Cell Culture System as well as have excitable cells growing on 6- or 24-well MaxTwo plates.
+This is a short tutorial describing how to access and set up the MaxTwo system. You will need access to the remote Linux computer and the MaxTwo cell culture system, as well as excitable cells growing on 6- or 24-well MaxTwo plates.
 
-### Before starting!:
+## Before Starting
 
--   Always make sure to book the system on [EZBooking](https://booking.core.uzh.ch/cgi-bin/AGS_Login.cgi). If you don't have access to the booking system, contact a staff member.
+-   Always make sure to book the system on [EZBooking](https://booking.core.uzh.ch/cgi-bin/AGS_Login.cgi).\
+    If you do not have access to the booking system, contact a staff member.
 
--   Turn on the MaxTwo recorder and gas mixer (located underneath the microscope on a small incubator).
+-   Turn on the **MaxTwo recorder** and **gas mixer** (located underneath the microscope on a small incubator).
 
-<!-- -->
+-   Allow the MaxTwo recorder to warm up for **10–15 minutes** and the gas mixer to calibrate to **5% CO₂**.\
+    If it is not possible to arrive earlier, ask a staff member to turn the system on for you in advance.
 
--   Make sure to let the MaxTwo recorder warm up for 10-15min and the gas mixer to calibrate to 5% CO2. If it is not possible to come by sooner, you can ask a staff member to turn it on for you (some time in advance).
+## Place Plate into the Recorder
 
-### Place Plate into the Recorder
+-   Click **once** on the blue button\
+    (touchscreen style, only light pressure is needed).
 
--   Click once on the blue button (touchscreen style, does not need much force)
+-   Place the plate into the recorder.\
+    Make sure the two notches on the upper short side align with the corresponding holes on the plate.
 
--   Place the plate into the recorder, make sure the two notches on the upper short side aligns with the the holes on the plate.
+-   **Double-click** the blue button\
+    (this can also be done from the software).
 
--   Double-click on the blue button (alternatively, this can be done also from the software).
+-   Close the recorder by clicking **once** on the blue button.
 
--   Close the recorder by clicking one time on the blue button.
+-   If you are using a **6-well plate**, make sure to remember the **unique plate ID**.
 
--   If you have a 6-well plate, make sure to remember the unique ID of your plate.
+## Access the Linux Computer
 
-### Access the Linux Computer
+To access the recording Linux computer, you need **Citrix**.
 
-In order to access the recording Linux Computer, you will need to have access to Citrix. There are several ZMB tutorials on how to do it for the first on [Windows](https://zmb.dozuki.com/Guide/Installation+of+Citrix+Workspace+app+-+Windows/243?lang=en), [Mac](https://zmb.dozuki.com/Guide/Installation+of+Citrix+Workspace+app+-+Mac/244?lang=en) or [Linux](https://zmb.dozuki.com/Guide/Installation+of+Citrix+Workspace+app+-+Linux/245).
+There are several ZMB tutorials explaining how to set this up for the first time on\
+[Windows](https://zmb.dozuki.com/Guide/Installation+of+Citrix+Workspace+app+-+Windows/243?lang=en),\
+[Mac](https://zmb.dozuki.com/Guide/Installation+of+Citrix+Workspace+app+-+Mac/244?lang=en), or\
+[Linux](https://zmb.dozuki.com/Guide/Installation+of+Citrix+Workspace+app+-+Linux/245).
 
-Click on "EPHAC MaxTwo VM" and connect to the PC via Remote Desktop (RDP). See below for troubleshooting if something goes wrong.
+Click on **“EPHAC MaxTwo VM”** and connect to the PC via **Remote Desktop (RDP)**.\
+See the troubleshooting section below if something goes wrong.
 
 The username and password of the remote computer will be communicated to you separately.
 
-Good to know:
+::: callout-note
+## Good to know
 
-If you are connected to the UZH intranet either directly or through VPN, you can also access the remote computer via RDP. This allows you to set custom resolutions for your display. Contact us to know more about it.
+If you are connected to the **UZH intranet**, either directly or through VPN, you can also access the remote computer directly via **RDP**. This allows you to set custom screen resolutions. Contact staff for more information.
+:::
 
 ![Remote Connection Setup](start_picture.png){.lightbox fig-align="center" width="1200px"}
 
-### Start MaxLab Live Scope
+## Start MaxLab Live Scope
 
-If you find the programs on from a previous user, make sure to close everything and start fresh every time. First, connect to the MaxTwo Recorder by clicking on "Server" on the Desktop, then open the MaxLab Live Program called "Scope".
+If programs are still open from a previous user, close everything and start fresh.
 
-You will need to initiate the plate by clicking on "Initiate" (close to left bottom corner). If you own a 24-well plate, it will recognize the plate id automatically. Still make sure the plate id matches yours, as in rare instances it reports the previously recorded plate. If you own a 6-well plate, type in your ID.
+1.  Connect to the **MaxTwo recorder** by clicking on **“Server”** on the desktop.
+2.  Open **MaxLab Live**, then start the program called **“Scope”**.
 
-Click on "Offset" and observe the Offset Histogram close to the right-upper corner becoming tighter. This indicates that the plate is properly connected. If the Offset Histogram is very wide, try to reseat the plate by unlocking and re-locking it from MaxLab (icon that looks like the MaxTwo recorder, then click on Unlock Plate and re-lock it) or physically on the recorder by double-clicking on the blue button.
+### Initiate the Plate
+
+-   Click **“Initiate”** (near the bottom-left corner).
+
+-   **24-well plates:**\
+    The plate ID is detected automatically. Always verify that the detected ID matches your plate, as in rare cases the previously recorded plate may be shown.
+
+-   **6-well plates:**\
+    Enter your plate ID manually.
+
+### Set and Check the Offset
+
+-   Click **“Offset”**.
+-   Observe the **Offset Histogram** in the upper-right corner.
+
+A **narrow histogram** indicates that the plate is properly connected.
+
+If the histogram is very wide:
+
+-   Reseat the plate via MaxLab:
+    -   Click the icon resembling the MaxTwo recorder
+    -   Select **Unlock Plate**, then re-lock it
+-   Alternatively, reseat the plate physically by **double-clicking the blue button** on the recorder.
 
 ![MaxLab Scope GUI](maxlab_GUI.png){.lightbox fig-align="center"}
 
-Now you are ready to start a recording. Happy Spiking!!
+You are now ready to start a recording.\
+**Happy spiking!**
 
-## Troubleshooting:
+## Troubleshooting
 
-#### I cannot see the Citrix Icon of the Linux Computer:
+### I cannot see the Citrix icon for the Linux computer
 
--   Refresh Apps on Citrix (Wheel Cog Icon, upper right corner)
+-   Refresh apps in Citrix (wheel cog icon, upper right corner)
+-   Restart your computer and make sure you are using the latest Citrix version
+-   Try connecting via the browser-based version of\
+    [Citrix](https://vdi.core.uzh.ch/logon/LogonPoint/index.html)
+-   Contact a staff member or the ZMB IT department
 
--   If problems persists, restart your computer and make sure you are on the newest Citrix version.
+### The Linux computer is very slow or the display does not show the whole window
 
--   Try to connect to the browser version of [Citrix](https://vdi.core.uzh.ch/logon/LogonPoint/index.html).
+This is a known issue on **macOS** and/or **large (4K) displays**.\
+Contact staff for available workarounds.
 
--   Contact a staff member or the IT department of the ZMB.
+### I was disconnected and now see “Number of sessions reached”
 
-#### The Linux Computer is very slow to respond or the display does not show the whole window:
+Close Citrix completely and wait **5 minutes** before reconnecting.
 
-This is a known issue with Macs and/or large monitor displays (4K monitors). Contact staff for workaround.
+If the problem persists or repeats, use **direct RDP access** to connect to the Linux computer.
 
-#### I got thrown out of the program and now it says that Number of Sessions have been reached:
+### I cannot set the Offset or the plate ID is wrong (24-well plates only)
 
-Close down Citrix and wait 5mins before reconnecting. As an alternative, use RDP directly to connect to the Linux Computer, especially if this problem persists or repeats itself.
+-   Close **MaxLab** and the **Server connection**, then restart and reconnect.
 
-#### I cannot set the Offset or the Plate ID is wrong (24-well plate only):
+-   If the problem persists, reseat the plate in the MaxTwo recorder:
 
--   Close MaxLab and Server connection, restart and reconnect.
-
--   If problem persists, reseat the plate in the MaxTwo Recorder.
-
-    -   This can be done from MaxLab. Click on the icon that looks like the MaxTwo recorder, then click on Unlock Plate and re-lock it. You might need to close and reopen the program one more time.
-
-    -   Alternatively, do it physically on the recorder by double-click on the button.
+    -   From MaxLab:
+        -   Click the recorder icon
+        -   Select **Unlock Plate**, then re-lock it\
+        -   You may need to close and reopen MaxLab once more
+    -   Or physically on the recorder by **double-clicking the blue button**
