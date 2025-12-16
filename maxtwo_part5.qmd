@@ -1,0 +1,44 @@
+---
+title: "MaxWell Guides"
+author: "David Colameo"
+format: html
+editor: visual
+---
+
+## Links to MaxWell's Protocols and Documentation
+
+Access to important documentation for recommended software, hardware, and protocols:
+
+**Online:** View the most up-to-date document versions.
+
+### Documentation for MaxLab 
+
+-   [Live MaxLab Live Manual](https://share.mxwbio.com/d/ec016d3ece984afaa4a5/)
+
+-   [Electrical Stimulation Guide](https://share.mxwbio.com/d/5fd3d31ced4f41a48354/)
+
+### Documentation for MaxOne users
+
+-   [MaxOne Guide](https://share.mxwbio.com/d/5a6104dd7c13443b8694/)
+
+-   [MaxOne+ and MaxOne Handling, Cleaning, and Storage Recommendations](https://share.mxwbio.com/d/ddf140139e3349229d33/)
+
+-   [MaxOne Digital Input Extension Board Instructions](https://share.mxwbio.com/d/642b9973a0654086be7f/)
+
+### Documentation for MaxTwo users 
+
+-   [MaxTwo Guide](https://share.mxwbio.com/d/3f8fba5bb818473a9089/)
+
+-   [MaxTwo Well Plate Handling](https://share.mxwbio.com/d/c6c8188a3140421b812f/)
+
+### Protocols 
+
+-   [MaxOne+ and MaxOne Neuronal Cell Plating Protocol](https://share.mxwbio.com/d/f9965b40dca24b828ed9/)
+
+-   [MaxOne+ and MaxOne Brain Organoid Plating Protocol](https://share.mxwbio.com/d/27fc7bd4db744605b8f3/)
+
+-   [MaxTwo 6-Well Plate Neuronal Cell Plating Protocol](https://share.mxwbio.com/d/58d9dc2139a04820bd20/)
+
+-   [MaxTwo 24-Well Plate Neuronal Cell Plating Protocol](https://share.mxwbio.com/d/85eada76bde74adc9849/)
+
+-   [MaxTwo Brain Organoid Plating Protocol](https://share.mxwbio.com/d/044a31a0c6f64357a31f/)

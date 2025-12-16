@@ -43,17 +43,19 @@ Good to know:
 
 If you are connected to the UZH intranet either directly or through VPN, you can also access the remote computer via RDP. This allows you to set custom resolutions for your display. Contact us to know more about it.
 
+![Remote Connection Setup](start_picture.png){.lightbox fig-align="center" width="1200px"}
+
 ### Start MaxLab Live Scope
 
 If you find the programs on from a previous user, make sure to close everything and start fresh every time. First, connect to the MaxTwo Recorder by clicking on "Server" on the Desktop, then open the MaxLab Live Program called "Scope".
 
 You will need to initiate the plate by clicking on "Initiate" (close to left bottom corner). If you own a 24-well plate, it will recognize the plate id automatically. Still make sure the plate id matches yours, as in rare instances it reports the previously recorded plate. If you own a 6-well plate, type in your ID.
 
-Click on "Offset" and observe the Offset Histogram close to the right-upper corner becoming tighter.
+Click on "Offset" and observe the Offset Histogram close to the right-upper corner becoming tighter. This indicates that the plate is properly connected. If the Offset Histogram is very wide, try to reseat the plate by unlocking and re-locking it from MaxLab (icon that looks like the MaxTwo recorder, then click on Unlock Plate and re-lock it) or physically on the recorder by double-clicking on the blue button.
+
+![MaxLab Scope GUI](maxlab_GUI.png){.lightbox fig-align="center"}
 
 Now you are ready to start a recording. Happy Spiking!!
-
-![Remote Connection Setup](start_picture.png){fig-align="center"}
 
 ## Troubleshooting:
 

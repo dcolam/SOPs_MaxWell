@@ -1,6 +1,8 @@
 ---
 title: "How to Seed Cells"
 author: "David Colameo"
+format: html
+editor: visual
 ---
 
 ## How to Prepare the Plate and Seed Cells

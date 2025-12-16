@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -98,23 +101,27 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./maxtwo_part1.html" aria-current="page"> 
-<span class="menu-text">Access Remote Computer</span></a>
+<span class="menu-text">Part 1</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./maxtwo_part2.html"> 
-<span class="menu-text">Setup Recordings</span></a>
+<span class="menu-text">Part 2</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./maxtwo_part3.html"> 
-<span class="menu-text">How to Seed Cells</span></a>
+<span class="menu-text">Part 3</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./maxtwo_part4.html"> 
-<span class="menu-text">Analysis and Data Export</span></a>
+<span class="menu-text">Part 4</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./maxtwo_part5.html"> 
+<span class="menu-text">Part 5</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">About Us</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -167,6 +174,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./maxtwo_part4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Analysis and Data Export</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./maxtwo_part5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MaxWell Guides</span></a>
   </div>
 </li>
     </ul>
@@ -248,13 +261,33 @@ ul.task-list li input[type="checkbox"] {
 <p>Click on “EPHAC MaxTwo VM” and connect to the PC via Remote Desktop (RDP). See below for troubleshooting if something goes wrong.</p>
 <p>The username and password of the remote computer will be communicated to you separately.</p>
 <p>Good to know:</p>
-<p>If you are connected to the UZH intranet either directly or through VPN, you can also access the remote computer via RDP. This allows you to set custom resolutions for your display.</p>
+<p>If you are connected to the UZH intranet either directly or through VPN, you can also access the remote computer via RDP. This allows you to set custom resolutions for your display. Contact us to know more about it.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="start_picture.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Remote Connection Setup"><img src="start_picture.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="1200" alt="Remote Connection Setup"></a></p>
+</figure>
+</div>
+<figcaption>Remote Connection Setup</figcaption>
+</figure>
+</div>
 </section>
 <section id="start-maxlab-live-scope" class="level3">
 <h3 class="anchored" data-anchor-id="start-maxlab-live-scope">Start MaxLab Live Scope</h3>
 <p>If you find the programs on from a previous user, make sure to close everything and start fresh every time. First, connect to the MaxTwo Recorder by clicking on “Server” on the Desktop, then open the MaxLab Live Program called “Scope”.</p>
 <p>You will need to initiate the plate by clicking on “Initiate” (close to left bottom corner). If you own a 24-well plate, it will recognize the plate id automatically. Still make sure the plate id matches yours, as in rare instances it reports the previously recorded plate. If you own a 6-well plate, type in your ID.</p>
-<p>Click on “Offset” and observe the Offset Histogram close to the right-upper corner becoming tighter.</p>
+<p>Click on “Offset” and observe the Offset Histogram close to the right-upper corner becoming tighter. This indicates that the plate is properly connected. If the Offset Histogram is very wide, try to reseat the plate by unlocking and re-locking it from MaxLab (icon that looks like the MaxTwo recorder, then click on Unlock Plate and re-lock it) or physically on the recorder by double-clicking on the blue button.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="maxlab_GUI.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="MaxLab Scope GUI"><img src="maxlab_GUI.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="MaxLab Scope GUI"></a></p>
+</figure>
+</div>
+<figcaption>MaxLab Scope GUI</figcaption>
+</figure>
+</div>
 <p>Now you are ready to start a recording. Happy Spiking!!</p>
 </section>
 </section>
@@ -705,6 +738,38 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

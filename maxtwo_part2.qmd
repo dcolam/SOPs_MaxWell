@@ -9,6 +9,16 @@ editor: visual
 
 At this point, you should have done your first training with a staff member, so if possible refer to the specific recording strategies discussed in the training. This tutorial serves as a basic reminder of the most basic workflow, an activity scan and network assay.
 
+### Typical Experimental Workflow
+
+\`\`\`{mermaid}
+flowchart LR
+A(Seed Cells) --\> B()
+B --\> C{Decision}
+C --\> D\[Result one\]
+C --\> E\[Result two\]
+\`\`\`
+
 ### Assess whether you have biological meaningful signal
 
 At the beginning of your experimental journey, it might be difficult to evaluate whether you have biologically meaningful signal.

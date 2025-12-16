@@ -2,6 +2,13 @@
 title: "Standard of Practice for the MaxTwo System"
 ---
 
-### Welcome to our Tutorial Website
+
+## Welcome to our Tutorial Website 
 
 Here you will learn how to use the MaxWell System at the Electrophysiology Core Facility.
+
+<center>
+<video autoplay="true" loop="true" muted="true" width="800px">
+<source src="Media1.mp4"> 
+</video>
+</center>

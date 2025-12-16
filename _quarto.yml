@@ -7,11 +7,18 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - maxtwo_part1.qmd
-      - maxtwo_part2.qmd
-      - maxtwo_part3.qmd
-      - maxtwo_part4.qmd
-      - about.qmd
+      - href: maxtwo_part1.qmd
+        text: Part 1
+      - href: maxtwo_part2.qmd
+        text: Part 2
+      - href: maxtwo_part3.qmd
+        text: Part 3
+      - href: maxtwo_part4.qmd
+        text: Part 4
+      - href: maxtwo_part5.qmd
+        text: Part 5
+      - href: about.qmd
+        text: About Us
   sidebar:
     contents: auto
   page-navigation: true
