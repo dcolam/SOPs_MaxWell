@@ -1,6 +1,5 @@
 ---
 title: "Setup Recordings"
-author: "David Colameo"
 format: html
 editor: visual
 ---
@@ -15,15 +14,36 @@ This tutorial serves as a basic reminder of the core workflow, focusing on an ac
 
 ```{mermaid}
 flowchart LR
-A(Seed Cells) --> B(Culture)
-B --> C{Activity Scans}
-C --> D[Network Assay]
-D --> C
+A["Seed Cells"] --> B["Culture & Maintenance"]
+
+subgraph T["Measurements over Time"]
+  C["Activity Scan"] --> D["Network Assay"]
+end
+
+B --> C
+D --> B
+style T fill:#ffffff,stroke:#333333,stroke-width:1px
 ```
 
-## Assess Whether You Have Biologically Meaningful Signals
+*Experimental workflow showing long-term culture maintenance with repeated electrophysiological measurements combining Activity Scans and Network Assays.*
+
+### Assess Whether You Have Biologically Meaningful Signals
 
 At the beginning of your experimental journey, it might be difficult to evaluate whether you are observing biologically meaningful signals.
+
+Here are some general guidelines to help you assess the quality of your recordings:
+
+-   **Activity Level**: Look for spontaneous spiking activity patterns. If you see very few or no spikes, your cells may not be healthy or mature enough.
+
+-   **Signal in close proximity to electrodes**: Check if spikes are detected on multiple neighboring electrodes. This indicates that the signal originates from the same cell, since the electrodes are very close together (17.5 µm pitch). This can be done by:
+
+    -   Drawing a high-density region-of-interest around an electrode were you suspect to detect biological meaning signal ([Sees selection tools in MaxLab Scope GUI](maxtwo_part1.qmd#maxlab-scope-gui-overview))
+
+    -   Click on **Route** and then **Download.**
+
+    -   Check whether spikes appear around the electrode of interest at the same time.
+
+    -   Alternatively use the **Footprint** tool to check at the waveform and the waveform of the surrounding signals.
 
 ### The Activity Scan Assay
 
@@ -33,11 +53,11 @@ In general, it is recommended to sacrifice some spatial resolution in order to g
 
 To set up an Activity Scan:
 
-- Go to the **Assay** tab.
-- Change the **Project** to your specific project (**IMPORTANT**).
-- Open a new assay and choose **Activity Scan**.
-- Select the **Checkerboard** configuration.
-- Scan for at least **90 seconds per configuration**.
+-   Go to the **Assay** tab.
+-   Change the **Project** to your specific project (**IMPORTANT**).
+-   Open a new assay and choose **Activity Scan**.
+-   Select the **Checkerboard** configuration.
+-   Scan for at least **90 seconds per configuration**.
 
 This setup provides a good compromise between temporal and spatial resolution. You can adjust the settings by increasing or decreasing the spatial resolution (e.g. **Full Scan**) or the scan duration.
 
@@ -67,12 +87,12 @@ Although these are technically not true waiting blocks, **Record Assays** can be
 
 To configure a waiting block:
 
-- Create a **Record Assay**.
-- Set a short recording duration (typically **1 minute**).
-- Set the *in-between cycle time* to **half of the desired waiting period**  
-  (e.g. 30 minutes for a 1-hour waiting block).
-- Repeat the assay for **3 cycles**.
-- Use the **Estimate Time** button to verify that the waiting block is configured correctly.
+-   Create a **Record Assay**.
+-   Set a short recording duration (typically **1 minute**).
+-   Set the *in-between cycle time* to **half of the desired waiting period**\
+    (e.g. 30 minutes for a 1-hour waiting block).
+-   Repeat the assay for **3 cycles**.
+-   Use the **Estimate Time** button to verify that the waiting block is configured correctly.
 
 ::: callout-warning
 **IMPORTANT**
@@ -86,7 +106,9 @@ By alternating **Network Assays** with **Waiting Blocks (Record Assays)**, you c
 
 ## Frequently Asked Questions
 
-### How do I know that my cells are healthy?
+<details>
+
+<summary><strong>How do I know that my cells are healthy?</strong></summary>
 
 This can be difficult to assess, as cells are not visible on the surface of the sensors. We recommend plating **sister cultures** in parallel on glass coverslips to obtain a general indication of culture health.
 
@@ -94,18 +116,23 @@ In older cultures, you may start to see a **matte coating** on the sensor surfac
 
 Make sure that these changes are not caused by **fungal or bacterial contamination**, which typically turns the media **bright yellow** very quickly and produces a **cloudy layer** on top of the sensor area. If contamination is suspected, terminate the experiment immediately to avoid cross-contamination—especially when using shared cell culture facilities.
 
-### When can I expect neuronal activity in my cells?
+</details>
+
+<details>
+
+<summary><strong>When can I expect neuronal activity in my cells?</strong></summary>
 
 This depends strongly on the cell type and culturing conditions.
 
 Empirically:
 
-- **iPSC-derived neuronal cultures (forward programming):**
-  - Initial activity: **Day 14–18**
-  - Onset of bursting: **Day 18–35**
-
-- **Primary rodent neuronal cultures:**
-  - Initial activity: **~Day 7**
-  - Onset of bursting: **Day 10–14**
+-   **iPSC-derived neuronal cultures (forward programming):**
+    -   Initial activity: **Day 14–18**
+    -   Onset of bursting: **Day 18–35**
+-   **Primary rodent neuronal cultures:**
+    -   Initial activity: **\~Day 7**
+    -   Onset of bursting: **Day 10–14**
 
 These timeframes are approximate, and results may vary depending on experimental conditions.
+
+</details>

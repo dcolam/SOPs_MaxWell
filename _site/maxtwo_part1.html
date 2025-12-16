@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="David Colameo">
 
 <title>Access Remote Computer – HD-MEA Tutorials for e-phac Users</title>
 <style>
@@ -149,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About</span></a>
+ <span class="menu-text">About Us</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -193,21 +192,15 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#welcome-to-maxtwo" id="toc-welcome-to-maxtwo" class="nav-link active" data-scroll-target="#welcome-to-maxtwo">Welcome to MaxTwo</a></li>
-  <li><a href="#before-starting" id="toc-before-starting" class="nav-link" data-scroll-target="#before-starting">Before Starting</a></li>
   <li><a href="#place-plate-into-the-recorder" id="toc-place-plate-into-the-recorder" class="nav-link" data-scroll-target="#place-plate-into-the-recorder">Place Plate into the Recorder</a></li>
   <li><a href="#access-the-linux-computer" id="toc-access-the-linux-computer" class="nav-link" data-scroll-target="#access-the-linux-computer">Access the Linux Computer</a></li>
   <li><a href="#start-maxlab-live-scope" id="toc-start-maxlab-live-scope" class="nav-link" data-scroll-target="#start-maxlab-live-scope">Start MaxLab Live Scope</a>
   <ul class="collapse">
   <li><a href="#initiate-the-plate" id="toc-initiate-the-plate" class="nav-link" data-scroll-target="#initiate-the-plate">Initiate the Plate</a></li>
   <li><a href="#set-and-check-the-offset" id="toc-set-and-check-the-offset" class="nav-link" data-scroll-target="#set-and-check-the-offset">Set and Check the Offset</a></li>
+  <li><a href="#maxlab-scope-gui-overview" id="toc-maxlab-scope-gui-overview" class="nav-link" data-scroll-target="#maxlab-scope-gui-overview">MaxLab Scope GUI Overview</a></li>
   </ul></li>
-  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
-  <ul class="collapse">
-  <li><a href="#i-cannot-see-the-citrix-icon-for-the-linux-computer" id="toc-i-cannot-see-the-citrix-icon-for-the-linux-computer" class="nav-link" data-scroll-target="#i-cannot-see-the-citrix-icon-for-the-linux-computer">I cannot see the Citrix icon for the Linux computer</a></li>
-  <li><a href="#the-linux-computer-is-very-slow-or-the-display-does-not-show-the-whole-window" id="toc-the-linux-computer-is-very-slow-or-the-display-does-not-show-the-whole-window" class="nav-link" data-scroll-target="#the-linux-computer-is-very-slow-or-the-display-does-not-show-the-whole-window">The Linux computer is very slow or the display does not show the whole window</a></li>
-  <li><a href="#i-was-disconnected-and-now-see-number-of-sessions-reached" id="toc-i-was-disconnected-and-now-see-number-of-sessions-reached" class="nav-link" data-scroll-target="#i-was-disconnected-and-now-see-number-of-sessions-reached">I was disconnected and now see “Number of sessions reached”</a></li>
-  <li><a href="#i-cannot-set-the-offset-or-the-plate-id-is-wrong-24-well-plates-only" id="toc-i-cannot-set-the-offset-or-the-plate-id-is-wrong-24-well-plates-only" class="nav-link" data-scroll-target="#i-cannot-set-the-offset-or-the-plate-id-is-wrong-24-well-plates-only">I cannot set the Offset or the plate ID is wrong (24-well plates only)</a></li>
-  </ul></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
   </ul>
 </nav>
     </div>
@@ -223,12 +216,6 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>David Colameo </p>
-          </div>
-  </div>
     
   
     
@@ -242,9 +229,16 @@ ul.task-list li input[type="checkbox"] {
 <section id="welcome-to-maxtwo" class="level2">
 <h2 class="anchored" data-anchor-id="welcome-to-maxtwo">Welcome to MaxTwo</h2>
 <p>This is a short tutorial describing how to access and set up the MaxTwo system. You will need access to the remote Linux computer and the MaxTwo cell culture system, as well as excitable cells growing on 6- or 24-well MaxTwo plates.</p>
-</section>
-<section id="before-starting" class="level2">
-<h2 class="anchored" data-anchor-id="before-starting">Before Starting</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Before Starting
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li><p>Always make sure to book the system on <a href="https://booking.core.uzh.ch/cgi-bin/AGS_Login.cgi">EZBooking</a>.<br>
 If you do not have access to the booking system, contact a staff member.</p></li>
@@ -252,6 +246,8 @@ If you do not have access to the booking system, contact a staff member.</p></li
 <li><p>Allow the MaxTwo recorder to warm up for <strong>10–15 minutes</strong> and the gas mixer to calibrate to <strong>5% CO₂</strong>.<br>
 If it is not possible to arrive earlier, ask a staff member to turn the system on for you in advance.</p></li>
 </ul>
+</div>
+</div>
 </section>
 <section id="place-plate-into-the-recorder" class="level2">
 <h2 class="anchored" data-anchor-id="place-plate-into-the-recorder">Place Plate into the Recorder</h2>
@@ -333,6 +329,9 @@ Enter your plate ID manually.</p></li>
 </ul></li>
 <li>Alternatively, reseat the plate physically by <strong>double-clicking the blue button</strong> on the recorder.</li>
 </ul>
+</section>
+<section id="maxlab-scope-gui-overview" class="level3">
+<h3 class="anchored" data-anchor-id="maxlab-scope-gui-overview">MaxLab Scope GUI Overview</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <div class="quarto-figure quarto-figure-center">
@@ -349,8 +348,10 @@ Enter your plate ID manually.</p></li>
 </section>
 <section id="troubleshooting" class="level2">
 <h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
-<section id="i-cannot-see-the-citrix-icon-for-the-linux-computer" class="level3">
-<h3 class="anchored" data-anchor-id="i-cannot-see-the-citrix-icon-for-the-linux-computer">I cannot see the Citrix icon for the Linux computer</h3>
+<details>
+<summary>
+<strong>I cannot see the Citrix icon for the Linux computer</strong>
+</summary>
 <ul>
 <li>Refresh apps in Citrix (wheel cog icon, upper right corner)</li>
 <li>Restart your computer and make sure you are using the latest Citrix version</li>
@@ -358,36 +359,47 @@ Enter your plate ID manually.</p></li>
 <a href="https://vdi.core.uzh.ch/logon/LogonPoint/index.html">Citrix</a></li>
 <li>Contact a staff member or the ZMB IT department</li>
 </ul>
-</section>
-<section id="the-linux-computer-is-very-slow-or-the-display-does-not-show-the-whole-window" class="level3">
-<h3 class="anchored" data-anchor-id="the-linux-computer-is-very-slow-or-the-display-does-not-show-the-whole-window">The Linux computer is very slow or the display does not show the whole window</h3>
-<p>This is a known issue on <strong>macOS</strong> and/or <strong>large (4K) displays</strong>.<br>
-Contact staff for available workarounds.</p>
-</section>
-<section id="i-was-disconnected-and-now-see-number-of-sessions-reached" class="level3">
-<h3 class="anchored" data-anchor-id="i-was-disconnected-and-now-see-number-of-sessions-reached">I was disconnected and now see “Number of sessions reached”</h3>
-<p>Close Citrix completely and wait <strong>5 minutes</strong> before reconnecting.</p>
+</details>
+<details>
+<summary>
+<strong>The Linux computer is very slow or the display does not show the whole window</strong>
+</summary>
+<p>This is a known issue on <strong>macOS</strong> and/or <strong>large (4K) displays</strong>.</p>
+<p>Contact staff for available workarounds.</p>
+</details>
+<details>
+<summary>
+<strong>I was disconnected and now see “Number of sessions reached”</strong>
+</summary>
+<ul>
+<li>Close Citrix completely</li>
+<li>Wait <strong>5 minutes</strong> before reconnecting</li>
+</ul>
 <p>If the problem persists or repeats, use <strong>direct RDP access</strong> to connect to the Linux computer.</p>
-</section>
-<section id="i-cannot-set-the-offset-or-the-plate-id-is-wrong-24-well-plates-only" class="level3">
-<h3 class="anchored" data-anchor-id="i-cannot-set-the-offset-or-the-plate-id-is-wrong-24-well-plates-only">I cannot set the Offset or the plate ID is wrong (24-well plates only)</h3>
+</details>
+<details>
+<summary>
+<strong>I cannot set the Offset or the plate ID is wrong (24-well plates only)</strong>
+</summary>
 <ul>
 <li><p>Close <strong>MaxLab</strong> and the <strong>Server connection</strong>, then restart and reconnect.</p></li>
 <li><p>If the problem persists, reseat the plate in the MaxTwo recorder:</p>
 <ul>
-<li>From MaxLab:
+<li><strong>From MaxLab:</strong>
 <ul>
 <li>Click the recorder icon</li>
-<li>Select <strong>Unlock Plate</strong>, then re-lock it<br>
-</li>
+<li>Select <strong>Unlock Plate</strong>, then re-lock it</li>
 <li>You may need to close and reopen MaxLab once more</li>
 </ul></li>
-<li>Or physically on the recorder by <strong>double-clicking the blue button</strong></li>
+<li><strong>Or physically on the recorder:</strong>
+<ul>
+<li>Double-click the blue button</li>
+</ul></li>
 </ul></li>
 </ul>
+</details>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -792,8 +804,8 @@ Contact staff for available workarounds.</p>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./about.html" class="pagination-link" aria-label="About">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">About</span>
+      <a href="./about.html" class="pagination-link" aria-label="About Us">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">About Us</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

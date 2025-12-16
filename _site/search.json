@@ -40,7 +40,7 @@
     "href": "maxtwo_part2.html#frequently-asked-questions",
     "title": "Setup Recordings",
     "section": "Frequently Asked Questions",
-    "text": "Frequently Asked Questions\n\nHow do I know that my cells are healthy?\nThis can be difficult to assess, as cells are not visible on the surface of the sensors. We recommend plating sister cultures in parallel on glass coverslips to obtain a general indication of culture health.\nIn older cultures, you may start to see a matte coating on the sensor surface. A gradual change in media color toward a more orange hue is also an indication that cells are still metabolically active.\nMake sure that these changes are not caused by fungal or bacterial contamination, which typically turns the media bright yellow very quickly and produces a cloudy layer on top of the sensor area. If contamination is suspected, terminate the experiment immediately to avoid cross-contamination—especially when using shared cell culture facilities.\n\n\nWhen can I expect neuronal activity in my cells?\nThis depends strongly on the cell type and culturing conditions.\nEmpirically:\n\niPSC-derived neuronal cultures (forward programming):\n\nInitial activity: Day 14–18\nOnset of bursting: Day 18–35\n\nPrimary rodent neuronal cultures:\n\nInitial activity: ~Day 7\nOnset of bursting: Day 10–14\n\n\nThese timeframes are approximate, and results may vary depending on experimental conditions.",
+    "text": "Frequently Asked Questions\n\n\nHow do I know that my cells are healthy?\n\nThis can be difficult to assess, as cells are not visible on the surface of the sensors. We recommend plating sister cultures in parallel on glass coverslips to obtain a general indication of culture health.\nIn older cultures, you may start to see a matte coating on the sensor surface. A gradual change in media color toward a more orange hue is also an indication that cells are still metabolically active.\nMake sure that these changes are not caused by fungal or bacterial contamination, which typically turns the media bright yellow very quickly and produces a cloudy layer on top of the sensor area. If contamination is suspected, terminate the experiment immediately to avoid cross-contamination—especially when using shared cell culture facilities.\n\n\n\nWhen can I expect neuronal activity in my cells?\n\nThis depends strongly on the cell type and culturing conditions.\nEmpirically:\n\niPSC-derived neuronal cultures (forward programming):\n\nInitial activity: Day 14–18\nOnset of bursting: Day 18–35\n\nPrimary rodent neuronal cultures:\n\nInitial activity: ~Day 7\nOnset of bursting: Day 10–14\n\n\nThese timeframes are approximate, and results may vary depending on experimental conditions.",
     "crumbs": [
       "Home",
       "Setup Recordings"
@@ -49,12 +49,12 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Us",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2",
+    "text": "The electrophysiology Platform for High-throughput and Advanced Cell-based assays (e-PHAC) is a core research facility at the University of Zurich that provides access to advanced electrophysiology technologies for the functional analysis of excitable cell systems.\ne-PHAC supports users by maintaining state-of-the-art instrumentation, offering hands-on training, and providing guidance on experimental workflows and best practices. The facility serves a broad range of research applications, including neuronal and cardiac models, stem-cell–derived systems, and pharmacological assays.\nThis tutorial describes practical workflows for the use of the MaxTwo system as implemented at e-PHAC. The procedures and recommendations presented here are based on accumulated experience across multiple projects and are intended to complement the official documentation provided by the instrument manufacturer.\nFor further information about the facility, available technologies, and access procedures, please visit\nhttps://www.e-phac.uzh.ch.\nThis tutorial webpage was authored by David Colameo",
     "crumbs": [
       "Home",
-      "About"
+      "About Us"
     ]
   },
   {
@@ -62,7 +62,7 @@
     "href": "maxtwo_part1.html",
     "title": "Access Remote Computer",
     "section": "",
-    "text": "This is a short tutorial describing how to access and set up the MaxTwo system. You will need access to the remote Linux computer and the MaxTwo cell culture system, as well as excitable cells growing on 6- or 24-well MaxTwo plates.",
+    "text": "This is a short tutorial describing how to access and set up the MaxTwo system. You will need access to the remote Linux computer and the MaxTwo cell culture system, as well as excitable cells growing on 6- or 24-well MaxTwo plates.\n\n\n\n\n\n\nBefore Starting\n\n\n\n\nAlways make sure to book the system on EZBooking.\nIf you do not have access to the booking system, contact a staff member.\nTurn on the MaxTwo recorder and gas mixer (located underneath the microscope on a small incubator).\nAllow the MaxTwo recorder to warm up for 10–15 minutes and the gas mixer to calibrate to 5% CO₂.\nIf it is not possible to arrive earlier, ask a staff member to turn the system on for you in advance.",
     "crumbs": [
       "Home",
       "Access Remote Computer"
@@ -73,7 +73,7 @@
     "href": "maxtwo_part1.html#welcome-to-maxtwo",
     "title": "Access Remote Computer",
     "section": "",
-    "text": "This is a short tutorial describing how to access and set up the MaxTwo system. You will need access to the remote Linux computer and the MaxTwo cell culture system, as well as excitable cells growing on 6- or 24-well MaxTwo plates.",
+    "text": "This is a short tutorial describing how to access and set up the MaxTwo system. You will need access to the remote Linux computer and the MaxTwo cell culture system, as well as excitable cells growing on 6- or 24-well MaxTwo plates.\n\n\n\n\n\n\nBefore Starting\n\n\n\n\nAlways make sure to book the system on EZBooking.\nIf you do not have access to the booking system, contact a staff member.\nTurn on the MaxTwo recorder and gas mixer (located underneath the microscope on a small incubator).\nAllow the MaxTwo recorder to warm up for 10–15 minutes and the gas mixer to calibrate to 5% CO₂.\nIf it is not possible to arrive earlier, ask a staff member to turn the system on for you in advance.",
     "crumbs": [
       "Home",
       "Access Remote Computer"
@@ -84,7 +84,7 @@
     "href": "maxtwo_part1.html#troubleshooting",
     "title": "Access Remote Computer",
     "section": "Troubleshooting",
-    "text": "Troubleshooting\n\nI cannot see the Citrix icon for the Linux computer\n\nRefresh apps in Citrix (wheel cog icon, upper right corner)\nRestart your computer and make sure you are using the latest Citrix version\nTry connecting via the browser-based version of\nCitrix\nContact a staff member or the ZMB IT department\n\n\n\nThe Linux computer is very slow or the display does not show the whole window\nThis is a known issue on macOS and/or large (4K) displays.\nContact staff for available workarounds.\n\n\nI was disconnected and now see “Number of sessions reached”\nClose Citrix completely and wait 5 minutes before reconnecting.\nIf the problem persists or repeats, use direct RDP access to connect to the Linux computer.\n\n\nI cannot set the Offset or the plate ID is wrong (24-well plates only)\n\nClose MaxLab and the Server connection, then restart and reconnect.\nIf the problem persists, reseat the plate in the MaxTwo recorder:\n\nFrom MaxLab:\n\nClick the recorder icon\nSelect Unlock Plate, then re-lock it\n\nYou may need to close and reopen MaxLab once more\n\nOr physically on the recorder by double-clicking the blue button",
+    "text": "Troubleshooting\n\n\nI cannot see the Citrix icon for the Linux computer\n\n\nRefresh apps in Citrix (wheel cog icon, upper right corner)\nRestart your computer and make sure you are using the latest Citrix version\nTry connecting via the browser-based version of\nCitrix\nContact a staff member or the ZMB IT department\n\n\n\n\nThe Linux computer is very slow or the display does not show the whole window\n\nThis is a known issue on macOS and/or large (4K) displays.\nContact staff for available workarounds.\n\n\n\nI was disconnected and now see “Number of sessions reached”\n\n\nClose Citrix completely\nWait 5 minutes before reconnecting\n\nIf the problem persists or repeats, use direct RDP access to connect to the Linux computer.\n\n\n\nI cannot set the Offset or the plate ID is wrong (24-well plates only)\n\n\nClose MaxLab and the Server connection, then restart and reconnect.\nIf the problem persists, reseat the plate in the MaxTwo recorder:\n\nFrom MaxLab:\n\nClick the recorder icon\nSelect Unlock Plate, then re-lock it\nYou may need to close and reopen MaxLab once more\n\nOr physically on the recorder:\n\nDouble-click the blue button",
     "crumbs": [
       "Home",
       "Access Remote Computer"
@@ -205,7 +205,7 @@
     "href": "maxtwo_part1.html#start-maxlab-live-scope",
     "title": "Access Remote Computer",
     "section": "Start MaxLab Live Scope",
-    "text": "Start MaxLab Live Scope\nIf programs are still open from a previous user, close everything and start fresh.\n\nConnect to the MaxTwo recorder by clicking on “Server” on the desktop.\nOpen MaxLab Live, then start the program called “Scope”.\n\n\nInitiate the Plate\n\nClick “Initiate” (near the bottom-left corner).\n24-well plates:\nThe plate ID is detected automatically. Always verify that the detected ID matches your plate, as in rare cases the previously recorded plate may be shown.\n6-well plates:\nEnter your plate ID manually.\n\n\n\nSet and Check the Offset\n\nClick “Offset”.\nObserve the Offset Histogram in the upper-right corner.\n\nA narrow histogram indicates that the plate is properly connected.\nIf the histogram is very wide:\n\nReseat the plate via MaxLab:\n\nClick the icon resembling the MaxTwo recorder\nSelect Unlock Plate, then re-lock it\n\nAlternatively, reseat the plate physically by double-clicking the blue button on the recorder.\n\n\n\n\n\n\n\n\nMaxLab Scope GUI\n\n\nYou are now ready to start a recording.\nHappy spiking!",
+    "text": "Start MaxLab Live Scope\nIf programs are still open from a previous user, close everything and start fresh.\n\nConnect to the MaxTwo recorder by clicking on “Server” on the desktop.\nOpen MaxLab Live, then start the program called “Scope”.\n\n\nInitiate the Plate\n\nClick “Initiate” (near the bottom-left corner).\n24-well plates:\nThe plate ID is detected automatically. Always verify that the detected ID matches your plate, as in rare cases the previously recorded plate may be shown.\n6-well plates:\nEnter your plate ID manually.\n\n\n\nSet and Check the Offset\n\nClick “Offset”.\nObserve the Offset Histogram in the upper-right corner.\n\nA narrow histogram indicates that the plate is properly connected.\nIf the histogram is very wide:\n\nReseat the plate via MaxLab:\n\nClick the icon resembling the MaxTwo recorder\nSelect Unlock Plate, then re-lock it\n\nAlternatively, reseat the plate physically by double-clicking the blue button on the recorder.\n\n\n\nMaxLab Scope GUI Overview\n\n\n\n\n\n\n\nMaxLab Scope GUI\n\n\nYou are now ready to start a recording.\nHappy spiking!",
     "crumbs": [
       "Home",
       "Access Remote Computer"
@@ -216,7 +216,7 @@
     "href": "maxtwo_part2.html#typical-experimental-workflow",
     "title": "Setup Recordings",
     "section": "Typical Experimental Workflow",
-    "text": "Typical Experimental Workflow\n\n\n\n\n\nflowchart LR\nA(Seed Cells) --&gt; B(Culture)\nB --&gt; C{Activity Scans}\nC --&gt; D[Network Assay]\nD --&gt; C",
+    "text": "Typical Experimental Workflow\n\n\n\n\n\nflowchart LR\nA[\"Seed Cells\"] --&gt; B[\"Culture & Maintenance\"]\n\nsubgraph T[\"Measurements over Time\"]\n  C[\"Activity Scan\"] --&gt; D[\"Network Assay\"]\nend\n\nB --&gt; C\nD --&gt; B\nstyle T fill:#ffffff,stroke:#333333,stroke-width:1px\n\n\n\n\n\n\nExperimental workflow showing long-term culture maintenance with repeated electrophysiological measurements combining Activity Scans and Network Assays.\n\nAssess Whether You Have Biologically Meaningful Signals\nAt the beginning of your experimental journey, it might be difficult to evaluate whether you are observing biologically meaningful signals.\nHere are some general guidelines to help you assess the quality of your recordings:\n\nActivity Level: Look for spontaneous spiking activity patterns. If you see very few or no spikes, your cells may not be healthy or mature enough.\nSignal in close proximity to electrodes: Check if spikes are detected on multiple neighboring electrodes. This indicates that the signal originates from the same cell, since the electrodes are very close together (17.5 µm pitch). This can be done by:\n\nDrawing a high-density region-of-interest around an electrode were you suspect to detect biological meaning signal (Sees selection tools in MaxLab Scope GUI)\nClick on Route and then Download.\nCheck whether spikes appear around the electrode of interest at the same time.\nAlternatively use the Footprint tool to check at the waveform and the waveform of the surrounding signals.\n\n\n\n\nThe Activity Scan Assay\nAs a reminder, an activity scan assay is necessary to determine the most active areas of your chip. If your cells are still young or not very active, you may need to perform an activity scan during every session.\nIn general, it is recommended to sacrifice some spatial resolution in order to gain temporal resolution, especially when working with low-activity cultures.\nTo set up an Activity Scan:\n\nGo to the Assay tab.\nChange the Project to your specific project (IMPORTANT).\nOpen a new assay and choose Activity Scan.\nSelect the Checkerboard configuration.\nScan for at least 90 seconds per configuration.\n\nThis setup provides a good compromise between temporal and spatial resolution. You can adjust the settings by increasing or decreasing the spatial resolution (e.g. Full Scan) or the scan duration.\nIn some cases—especially with highly connected, mature neuronal networks—cells may become active only in infrequent bursts. In these situations, increasing the scan duration to 120–180 seconds can help avoid banding artifacts caused by inactivity.\nA full Activity Scan may take up most of your session time. Once your cultures reach a more mature state (typically after bursting begins), you may not need to repeat the Activity Scan every session and can reuse the same activity map for multiple recordings.\n\n\nThe Network Assay\nA Network Assay records a specific electrode configuration—typically derived from the results of an Activity Scan—for a predefined period of time. Depending on the activity level of your cells, a recording duration of 5–10 minutes is usually sufficient.\nYou will typically use the results of an Activity Scan to select areas of interest for the Network Assay. Experiment with different configurations initially, but once you are satisfied, it is recommended to remain consistent across sessions.\nWe typically use Feature Maximization to include the maximum number of electrodes (approximately 1020 electrodes).\nYou can queue the Network Assay to start immediately after the Activity Scan. Make sure that the Network Assay is configured to use the newest Activity Scan results, which will appear black while the scan is still running.\n\n\nAdvanced Topic: Repeated Network Assays with Waiting Blocks\nFor pharmacological treatments, you may want to perform repeated measurements that are evenly spaced in time. MaxWell does not support this functionality directly, but a workaround allows you to perform repeated recordings in an unsupervised manner.\nMake sure to book the corresponding time slots to accommodate the full sequence.\n\nWaiting Blocks Using Record Assays\nAlthough these are technically not true waiting blocks, Record Assays can be used to simulate them.\nTo configure a waiting block:\n\nCreate a Record Assay.\nSet a short recording duration (typically 1 minute).\nSet the in-between cycle time to half of the desired waiting period\n(e.g. 30 minutes for a 1-hour waiting block).\nRepeat the assay for 3 cycles.\nUse the Estimate Time button to verify that the waiting block is configured correctly.\n\n\n\n\n\n\n\nWarning\n\n\n\nIMPORTANT\nYou must select a configuration for the Record Assay. If the configuration is left blank, the waiting block will be skipped.\nYou can simply click “Choose Current Configuration.”\n\n\nBy alternating Network Assays with Waiting Blocks (Record Assays), you can space out recordings and perform repeated measurements. You will need to open and queue the assays in the exact order in which you want them to run.",
     "crumbs": [
       "Home",
       "Setup Recordings"
@@ -271,7 +271,7 @@
     "href": "maxtwo_part3.html#seeding-cells",
     "title": "How to Seed Cells",
     "section": "4. Seeding Cells",
-    "text": "4. Seeding Cells\nAfter coating, the plates are ready for cell seeding.\nWe strongly recommend performing a pilot experiment using different cell numbers and concentrations.\nTypical seeding densities: - 50,000–150,000 cells per well on the sensor area\nKey considerations:\n\nThe sensor area is covered with approximately 50 µL of solution.\nConcentrate your cell suspension accordingly.\nAfter seeding, place the plate in the incubator for 1 hour.\n\nDo not exceed 1 hour, as evaporation of the 50 µL can occur.\n\n\nAfter incubation, carefully fill the wells:\n\n24-well plates: ~500–600 µL per well\n6-well plates: 1–1.5 mL per well\n\nProceed with your normal cell culture routine.",
+    "text": "4. Seeding Cells\nAfter coating, the plates are ready for cell seeding. Typical seeding densities: - 50,000–150,000 cells per well on the sensor area\n\n\n\n\n\n\nNote\n\n\n\nWe strongly recommend performing a pilot experiment using different cell numbers and concentrations.\n\n\nKey considerations:\n\nThe sensor area is covered with approximately 50 µL of solution.\nConcentrate your cell suspension accordingly.\nAfter seeding, place the plate in the incubator for 1 hour.\n\nDo not exceed 1 hour, as evaporation of the 50 µL can occur.\n\n\nAfter incubation, carefully fill the wells:\n\n24-well plates: ~500–600 µL per well\n6-well plates: 1–1.5 mL per well\n\nProceed with your normal cell culture routine.",
     "crumbs": [
       "Home",
       "How to Seed Cells"
@@ -282,10 +282,43 @@
     "href": "maxtwo_part3.html#tips-and-tricks",
     "title": "How to Seed Cells",
     "section": "Tips and Tricks",
-    "text": "Tips and Tricks\n\nNever touch the sensor area with pipette tips, as this may damage the electronic components.\nWhen aspirating liquid, place the aspirator carefully at the corner of the sensor area and slightly tilt the plate.\nWhen placing 50 µL of solution on the sensor area, make sure the surrounding area is dry.\nAny liquid connection to wet regions outside the sensor area will cause the droplet to spread and may prevent full coverage of the sensor.\n\nAlways verify that you can see a distinct liquid bubble over the sensor area. This is critical for successful seeding, as spreading will cause cells to distribute outside the sensor instead of settling on it.",
+    "text": "Tips and Tricks\n\nNever touch the sensor area with pipette tips, as this may damage the electronic components.\nWhen aspirating liquid, place the aspirator carefully at the corner of the sensor area and slightly tilt the plate.\nWhen placing 50 µL of solution on the sensor area, make sure the surrounding area is dry.\nAny liquid connection to wet regions outside the sensor area will cause the droplet to spread and may prevent full coverage of the sensor.\n\nAlways verify that you can see a distinct liquid bubble over the sensor area. This is critical for successful seeding, as spreading will cause cells to distribute outside the sensor instead of settling on it. - If you notice that the liquid is spreading too much, try reducing the volume slightly (e.g., to 40 µL).\nAlternatively, you can try to absorb excess liquid from the corners of the sensor area using a sterile tissue or pipette tip (without touching the sensor surface).",
     "crumbs": [
       "Home",
       "How to Seed Cells"
+    ]
+  },
+  {
+    "objectID": "maxtwo_part1.html#troubleshooting-1",
+    "href": "maxtwo_part1.html#troubleshooting-1",
+    "title": "Access Remote Computer",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\n\nI cannot see the Citrix icon for the Linux computer\n\nRefresh apps in Citrix (wheel cog icon, upper right corner)\nRestart your computer and make sure you are using the latest Citrix version\nTry connecting via the browser-based version of\nCitrix\nContact a staff member or the ZMB IT department\n\n\n\nThe Linux computer is very slow or the display does not show the whole window\nThis is a known issue on macOS and/or large (4K) displays.\nContact staff for available workarounds.\n\n\nI was disconnected and now see “Number of sessions reached”\nClose Citrix completely and wait 5 minutes before reconnecting.\nIf the problem persists or repeats, use direct RDP access to connect to the Linux computer.\n\n\nI cannot set the Offset or the plate ID is wrong (24-well plates only)\n\nClose MaxLab and the Server connection, then restart and reconnect.\nIf the problem persists, reseat the plate in the MaxTwo recorder:\n\nFrom MaxLab:\n\nClick the recorder icon\nSelect Unlock Plate, then re-lock it\n\nYou may need to close and reopen MaxLab once more\n\nOr physically on the recorder by double-clicking the blue button",
+    "crumbs": [
+      "Home",
+      "Access Remote Computer"
+    ]
+  },
+  {
+    "objectID": "about.html#about-e-phac",
+    "href": "about.html#about-e-phac",
+    "title": "About Us",
+    "section": "",
+    "text": "The electrophysiology Platform for High-throughput and Advanced Cell-based assays (e-PHAC) is a core research facility at the University of Zurich that provides access to advanced electrophysiology technologies for the functional analysis of excitable cell systems.\ne-PHAC supports users by maintaining state-of-the-art instrumentation, offering hands-on training, and providing guidance on experimental workflows and best practices. The facility serves a broad range of research applications, including neuronal and cardiac models, stem-cell–derived systems, and pharmacological assays.\nThis tutorial describes practical workflows for the use of the MaxTwo system as implemented at e-PHAC. The procedures and recommendations presented here are based on accumulated experience across multiple projects and are intended to complement the official documentation provided by the instrument manufacturer.\nFor further information about the facility, available technologies, and access procedures, please visit\nhttps://www.e-phac.uzh.ch.",
+    "crumbs": [
+      "Home",
+      "About Us"
+    ]
+  },
+  {
+    "objectID": "about.html#section",
+    "href": "about.html#section",
+    "title": "About Us",
+    "section": "",
+    "text": "The electrophysiology Platform for High-throughput and Advanced Cell-based assays (e-PHAC) is a core research facility at the University of Zurich that provides access to advanced electrophysiology technologies for the functional analysis of excitable cell systems.\ne-PHAC supports users by maintaining state-of-the-art instrumentation, offering hands-on training, and providing guidance on experimental workflows and best practices. The facility serves a broad range of research applications, including neuronal and cardiac models, stem-cell–derived systems, and pharmacological assays.\nThis tutorial describes practical workflows for the use of the MaxTwo system as implemented at e-PHAC. The procedures and recommendations presented here are based on accumulated experience across multiple projects and are intended to complement the official documentation provided by the instrument manufacturer.\nFor further information about the facility, available technologies, and access procedures, please visit\nhttps://www.e-phac.uzh.ch.\nThis tutorial webpage was authored by David Colameo",
+    "crumbs": [
+      "Home",
+      "About Us"
     ]
   }
 ]

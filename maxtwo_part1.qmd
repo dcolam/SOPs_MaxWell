@@ -1,6 +1,5 @@
 ---
 title: "Access Remote Computer"
-author: "David Colameo"
 format: html
 editor: visual
 ---
@@ -9,6 +8,7 @@ editor: visual
 
 This is a short tutorial describing how to access and set up the MaxTwo system. You will need access to the remote Linux computer and the MaxTwo cell culture system, as well as excitable cells growing on 6- or 24-well MaxTwo plates.
 
+::: callout-note
 ## Before Starting
 
 -   Always make sure to book the system on [EZBooking](https://booking.core.uzh.ch/cgi-bin/AGS_Login.cgi).\
@@ -18,6 +18,7 @@ This is a short tutorial describing how to access and set up the MaxTwo system. 
 
 -   Allow the MaxTwo recorder to warm up for **10–15 minutes** and the gas mixer to calibrate to **5% CO₂**.\
     If it is not possible to arrive earlier, ask a staff member to turn the system on for you in advance.
+:::
 
 ## Place Plate into the Recorder
 
@@ -87,6 +88,7 @@ If the histogram is very wide:
     -   Select **Unlock Plate**, then re-lock it
 -   Alternatively, reseat the plate physically by **double-clicking the blue button** on the recorder.
 
+### MaxLab Scope GUI Overview
 ![MaxLab Scope GUI](maxlab_GUI.png){.lightbox fig-align="center"}
 
 You are now ready to start a recording.\
@@ -94,33 +96,50 @@ You are now ready to start a recording.\
 
 ## Troubleshooting
 
-### I cannot see the Citrix icon for the Linux computer
+<details>
+<summary><strong>I cannot see the Citrix icon for the Linux computer</strong></summary>
 
--   Refresh apps in Citrix (wheel cog icon, upper right corner)
--   Restart your computer and make sure you are using the latest Citrix version
--   Try connecting via the browser-based version of\
-    [Citrix](https://vdi.core.uzh.ch/logon/LogonPoint/index.html)
--   Contact a staff member or the ZMB IT department
+- Refresh apps in Citrix (wheel cog icon, upper right corner)
+- Restart your computer and make sure you are using the latest Citrix version
+- Try connecting via the browser-based version of  
+  [Citrix](https://vdi.core.uzh.ch/logon/LogonPoint/index.html)
+- Contact a staff member or the ZMB IT department
 
-### The Linux computer is very slow or the display does not show the whole window
+</details>
 
-This is a known issue on **macOS** and/or **large (4K) displays**.\
+<details>
+<summary><strong>The Linux computer is very slow or the display does not show the whole window</strong></summary>
+
+This is a known issue on **macOS** and/or **large (4K) displays**.
+
 Contact staff for available workarounds.
 
-### I was disconnected and now see “Number of sessions reached”
+</details>
 
-Close Citrix completely and wait **5 minutes** before reconnecting.
+<details>
+<summary><strong>I was disconnected and now see “Number of sessions reached”</strong></summary>
+
+- Close Citrix completely
+- Wait **5 minutes** before reconnecting
 
 If the problem persists or repeats, use **direct RDP access** to connect to the Linux computer.
 
-### I cannot set the Offset or the plate ID is wrong (24-well plates only)
+</details>
 
--   Close **MaxLab** and the **Server connection**, then restart and reconnect.
+<details>
+<summary><strong>I cannot set the Offset or the plate ID is wrong (24-well plates only)</strong></summary>
 
--   If the problem persists, reseat the plate in the MaxTwo recorder:
+- Close **MaxLab** and the **Server connection**, then restart and reconnect.
 
-    -   From MaxLab:
-        -   Click the recorder icon
-        -   Select **Unlock Plate**, then re-lock it\
-        -   You may need to close and reopen MaxLab once more
-    -   Or physically on the recorder by **double-clicking the blue button**
+- If the problem persists, reseat the plate in the MaxTwo recorder:
+
+  - **From MaxLab:**
+    - Click the recorder icon
+    - Select **Unlock Plate**, then re-lock it
+    - You may need to close and reopen MaxLab once more
+
+  - **Or physically on the recorder:**
+    - Double-click the blue button
+
+</details>
+

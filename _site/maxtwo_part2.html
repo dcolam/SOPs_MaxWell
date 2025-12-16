@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="David Colameo">
 
 <title>Setup Recordings – HD-MEA Tutorials for e-phac Users</title>
 <style>
@@ -149,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About</span></a>
+ <span class="menu-text">About Us</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -193,18 +192,14 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#your-first-recording" id="toc-your-first-recording" class="nav-link active" data-scroll-target="#your-first-recording">Your First Recording</a></li>
-  <li><a href="#typical-experimental-workflow" id="toc-typical-experimental-workflow" class="nav-link" data-scroll-target="#typical-experimental-workflow">Typical Experimental Workflow</a></li>
-  <li><a href="#assess-whether-you-have-biologically-meaningful-signals" id="toc-assess-whether-you-have-biologically-meaningful-signals" class="nav-link" data-scroll-target="#assess-whether-you-have-biologically-meaningful-signals">Assess Whether You Have Biologically Meaningful Signals</a>
+  <li><a href="#typical-experimental-workflow" id="toc-typical-experimental-workflow" class="nav-link" data-scroll-target="#typical-experimental-workflow">Typical Experimental Workflow</a>
   <ul class="collapse">
+  <li><a href="#assess-whether-you-have-biologically-meaningful-signals" id="toc-assess-whether-you-have-biologically-meaningful-signals" class="nav-link" data-scroll-target="#assess-whether-you-have-biologically-meaningful-signals">Assess Whether You Have Biologically Meaningful Signals</a></li>
   <li><a href="#the-activity-scan-assay" id="toc-the-activity-scan-assay" class="nav-link" data-scroll-target="#the-activity-scan-assay">The Activity Scan Assay</a></li>
   <li><a href="#the-network-assay" id="toc-the-network-assay" class="nav-link" data-scroll-target="#the-network-assay">The Network Assay</a></li>
   <li><a href="#advanced-topic-repeated-network-assays-with-waiting-blocks" id="toc-advanced-topic-repeated-network-assays-with-waiting-blocks" class="nav-link" data-scroll-target="#advanced-topic-repeated-network-assays-with-waiting-blocks">Advanced Topic: Repeated Network Assays with Waiting Blocks</a></li>
   </ul></li>
-  <li><a href="#frequently-asked-questions" id="toc-frequently-asked-questions" class="nav-link" data-scroll-target="#frequently-asked-questions">Frequently Asked Questions</a>
-  <ul class="collapse">
-  <li><a href="#how-do-i-know-that-my-cells-are-healthy" id="toc-how-do-i-know-that-my-cells-are-healthy" class="nav-link" data-scroll-target="#how-do-i-know-that-my-cells-are-healthy">How do I know that my cells are healthy?</a></li>
-  <li><a href="#when-can-i-expect-neuronal-activity-in-my-cells" id="toc-when-can-i-expect-neuronal-activity-in-my-cells" class="nav-link" data-scroll-target="#when-can-i-expect-neuronal-activity-in-my-cells">When can I expect neuronal activity in my cells?</a></li>
-  </ul></li>
+  <li><a href="#frequently-asked-questions" id="toc-frequently-asked-questions" class="nav-link" data-scroll-target="#frequently-asked-questions">Frequently Asked Questions</a></li>
   </ul>
 </nav>
     </div>
@@ -220,12 +215,6 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>David Colameo </p>
-          </div>
-  </div>
     
   
     
@@ -249,20 +238,37 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
-A(Seed Cells) --&gt; B(Culture)
-B --&gt; C{Activity Scans}
-C --&gt; D[Network Assay]
-D --&gt; C
+A["Seed Cells"] --&gt; B["Culture &amp; Maintenance"]
+
+subgraph T["Measurements over Time"]
+  C["Activity Scan"] --&gt; D["Network Assay"]
+end
+
+B --&gt; C
+D --&gt; B
+style T fill:#ffffff,stroke:#333333,stroke-width:1px
 </pre>
 </div>
 <p></p></figure><p></p>
 </div>
 </div>
 </div>
-</section>
-<section id="assess-whether-you-have-biologically-meaningful-signals" class="level2">
-<h2 class="anchored" data-anchor-id="assess-whether-you-have-biologically-meaningful-signals">Assess Whether You Have Biologically Meaningful Signals</h2>
+<p><em>Experimental workflow showing long-term culture maintenance with repeated electrophysiological measurements combining Activity Scans and Network Assays.</em></p>
+<section id="assess-whether-you-have-biologically-meaningful-signals" class="level3">
+<h3 class="anchored" data-anchor-id="assess-whether-you-have-biologically-meaningful-signals">Assess Whether You Have Biologically Meaningful Signals</h3>
 <p>At the beginning of your experimental journey, it might be difficult to evaluate whether you are observing biologically meaningful signals.</p>
+<p>Here are some general guidelines to help you assess the quality of your recordings:</p>
+<ul>
+<li><p><strong>Activity Level</strong>: Look for spontaneous spiking activity patterns. If you see very few or no spikes, your cells may not be healthy or mature enough.</p></li>
+<li><p><strong>Signal in close proximity to electrodes</strong>: Check if spikes are detected on multiple neighboring electrodes. This indicates that the signal originates from the same cell, since the electrodes are very close together (17.5 µm pitch). This can be done by:</p>
+<ul>
+<li><p>Drawing a high-density region-of-interest around an electrode were you suspect to detect biological meaning signal (<a href="./maxtwo_part1.html#maxlab-scope-gui-overview">Sees selection tools in MaxLab Scope GUI</a>)</p></li>
+<li><p>Click on <strong>Route</strong> and then <strong>Download.</strong></p></li>
+<li><p>Check whether spikes appear around the electrode of interest at the same time.</p></li>
+<li><p>Alternatively use the <strong>Footprint</strong> tool to check at the waveform and the waveform of the surrounding signals.</p></li>
+</ul></li>
+</ul>
+</section>
 <section id="the-activity-scan-assay" class="level3">
 <h3 class="anchored" data-anchor-id="the-activity-scan-assay">The Activity Scan Assay</h3>
 <p>As a reminder, an activity scan assay is necessary to determine the most active areas of your chip. If your cells are still young or not very active, you may need to perform an activity scan during every session.</p>
@@ -323,14 +329,18 @@ Warning
 </section>
 <section id="frequently-asked-questions" class="level2">
 <h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently Asked Questions</h2>
-<section id="how-do-i-know-that-my-cells-are-healthy" class="level3">
-<h3 class="anchored" data-anchor-id="how-do-i-know-that-my-cells-are-healthy">How do I know that my cells are healthy?</h3>
+<details>
+<summary>
+<strong>How do I know that my cells are healthy?</strong>
+</summary>
 <p>This can be difficult to assess, as cells are not visible on the surface of the sensors. We recommend plating <strong>sister cultures</strong> in parallel on glass coverslips to obtain a general indication of culture health.</p>
 <p>In older cultures, you may start to see a <strong>matte coating</strong> on the sensor surface. A gradual change in media color toward a more <strong>orange hue</strong> is also an indication that cells are still metabolically active.</p>
 <p>Make sure that these changes are not caused by <strong>fungal or bacterial contamination</strong>, which typically turns the media <strong>bright yellow</strong> very quickly and produces a <strong>cloudy layer</strong> on top of the sensor area. If contamination is suspected, terminate the experiment immediately to avoid cross-contamination—especially when using shared cell culture facilities.</p>
-</section>
-<section id="when-can-i-expect-neuronal-activity-in-my-cells" class="level3">
-<h3 class="anchored" data-anchor-id="when-can-i-expect-neuronal-activity-in-my-cells">When can I expect neuronal activity in my cells?</h3>
+</details>
+<details>
+<summary>
+<strong>When can I expect neuronal activity in my cells?</strong>
+</summary>
 <p>This depends strongly on the cell type and culturing conditions.</p>
 <p>Empirically:</p>
 <ul>
@@ -346,9 +356,9 @@ Warning
 </ul></li>
 </ul>
 <p>These timeframes are approximate, and results may vary depending on experimental conditions.</p>
+</details>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

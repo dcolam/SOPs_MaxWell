@@ -1,6 +1,5 @@
 ---
 title: "MaxWell Guides"
-author: "David Colameo"
 format: html
 editor: visual
 ---
@@ -11,7 +10,7 @@ Access to important documentation for recommended software, hardware, and protoc
 
 **Online:** View the most up-to-date document versions.
 
-### Documentation for MaxLab 
+### Documentation for MaxLab
 
 -   [Live MaxLab Live Manual](https://share.mxwbio.com/d/ec016d3ece984afaa4a5/)
 
@@ -25,13 +24,13 @@ Access to important documentation for recommended software, hardware, and protoc
 
 -   [MaxOne Digital Input Extension Board Instructions](https://share.mxwbio.com/d/642b9973a0654086be7f/)
 
-### Documentation for MaxTwo users 
+### Documentation for MaxTwo users
 
 -   [MaxTwo Guide](https://share.mxwbio.com/d/3f8fba5bb818473a9089/)
 
 -   [MaxTwo Well Plate Handling](https://share.mxwbio.com/d/c6c8188a3140421b812f/)
 
-### Protocols 
+### Protocols
 
 -   [MaxOne+ and MaxOne Neuronal Cell Plating Protocol](https://share.mxwbio.com/d/f9965b40dca24b828ed9/)
 

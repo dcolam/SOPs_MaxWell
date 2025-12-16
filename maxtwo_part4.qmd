@@ -1,6 +1,5 @@
 ---
 title: "Analysis and Data Export"
-author: "David Colameo"
 format: html
 editor: visual
 ---

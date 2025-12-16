@@ -1,6 +1,5 @@
 ---
 title: "How to Seed Cells"
-author: "David Colameo"
 format: html
 editor: visual
 ---
@@ -74,11 +73,13 @@ To conserve Laminin, you may coat **only the sensor area**:
 ## 4. Seeding Cells
 
 After coating, the plates are ready for cell seeding.
-
-We strongly recommend performing a **pilot experiment** using different cell numbers and concentrations.
-
 Typical seeding densities:
 - **50,000–150,000 cells per well** on the sensor area
+
+::: callout-note
+We strongly recommend performing a **pilot experiment** using different cell numbers and concentrations.
+:::
+
 
 Key considerations:
 

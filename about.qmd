@@ -1,9 +1,16 @@
 ---
-title: "About"
+title: "About Us"
 ---
 
-About this site
+## 
 
-```{r}
-1 + 1
-```
+The **electrophysiology Platform for High-throughput and Advanced Cell-based assays (e-PHAC)** is a core research facility at the University of Zurich that provides access to advanced electrophysiology technologies for the functional analysis of excitable cell systems.
+
+e-PHAC supports users by maintaining state-of-the-art instrumentation, offering hands-on training, and providing guidance on experimental workflows and best practices. The facility serves a broad range of research applications, including neuronal and cardiac models, stem-cell–derived systems, and pharmacological assays.
+
+This tutorial describes practical workflows for the use of the MaxTwo system as implemented at e-PHAC. The procedures and recommendations presented here are based on accumulated experience across multiple projects and are intended to complement the official documentation provided by the instrument manufacturer.
+
+For further information about the facility, available technologies, and access procedures, please visit\
+<https://www.e-phac.uzh.ch>.
+
+*This tutorial webpage was authored by David Colameo*
