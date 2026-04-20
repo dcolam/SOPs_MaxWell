@@ -1,0 +1,14 @@
+image: ubuntu:22.04
+
+pages:
+  before_script:
+    - apt-get update -qq && apt-get install -y curl
+    - curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v1.6.40/quarto-1.6.40-linux-amd64.deb
+    - dpkg -i quarto-1.6.40-linux-amd64.deb
+  script:
+    - quarto render . --output-dir public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
