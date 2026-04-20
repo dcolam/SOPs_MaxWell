@@ -20,25 +20,25 @@ If you are using a 6-well plate, the plate must first be **pre-treated and steri
 
 Pre-treatment with **1% Terg-a-zyme** increases the hydrophilicity of the sensor surface.
 
-- Prepare a **1% Terg-a-zyme** solution in sterile ddH₂O.
-- Fill the chips and incubate for **2–3 hours** (up to overnight) at room temperature.
-- Thoroughly rinse the plates with sterile ddH₂O **3–4 times** using **2–3 mL** per rinse.
+-   Prepare a **1% Terg-a-zyme** solution in sterile ddH₂O.
+-   Fill the chips and incubate for **2–3 hours** (up to overnight) at room temperature.
+-   Thoroughly rinse the plates with sterile ddH₂O **3–4 times** using **2–3 mL** per rinse.
 
 #### Sterilization
 
-- Spray all external surfaces of the plate thoroughly with **70% ethanol**.
-- Place the plate in a sterile environment (cell culture hood).
-- Fill all wells and surrounding areas with **cell-culture-grade 70% ethanol**.
+-   Spray all external surfaces of the plate thoroughly with **70% ethanol**.
+-   Place the plate in a sterile environment (cell culture hood).
+-   Fill all wells and surrounding areas with **cell-culture-grade 70% ethanol**.
 
 Make sure the **gold pins at the bottom of the plate remain as dry as possible**, as they corrode easily and corrosion will negatively affect recordings.
 
-- Incubate with 70% ethanol for **at least 30 minutes** under the hood.
-- **Do not use UV light**, as this can reduce the longevity of the electronics.
+-   Incubate with 70% ethanol for **at least 30 minutes** under the hood.
+-   **Do not use UV light**, as this can reduce the longevity of the electronics.
 
 After sterilization:
 
-- Rinse the plates with sterile ddH₂O **3–4 times**.
-- Allow the plates to dry under the hood until first use.
+-   Rinse the plates with sterile ddH₂O **3–4 times**.
+-   Allow the plates to dry under the hood until first use.
 
 ### For 24-well plates
 
@@ -50,8 +50,8 @@ If you are **re-using a plate (cell-free)**, follow the same pre-treatment and s
 
 Pre-conditioning is recommended, especially before first use.
 
-- Incubate the sterilized plates with **sterile culture media** in the incubator for **1–2 days**.
-- No washing step is required before coating.
+-   Incubate the sterilized plates with **sterile culture media** in the incubator for **1–2 days**.
+-   No washing step is required before coating.
 
 ## 3. Coating
 
@@ -61,48 +61,49 @@ We recommend starting with coating protocols that are already known to work for 
 
 If you do not normally coat surfaces, the following is a recommended starting protocol:
 
-- Coat with **Poly-D-Lysine (PDL) or Poly-L-Lysine (PLL)** overnight in the incubator.
-- Follow with **Laminin (20 ng/µL)** coating for **1 hour** in the incubator.
-- Wash with **ddH₂O or PBS** between coating steps.
+-   Coat with **Poly-D-Lysine (PDL) or Poly-L-Lysine (PLL)** overnight in the incubator.
+-   Follow with **Laminin (20 ng/µL)** coating for **1 hour** in the incubator.
+-   Wash with **ddH₂O or PBS** between coating steps.
 
 To conserve Laminin, you may coat **only the sensor area**:
 
-- Ensure the entire sensor area is covered (approximately **50 µL**).
-- It is generally recommended **not to let the surface dry** after coating.
+-   Ensure the entire sensor area is covered (approximately **50 µL**).
+-   It is generally recommended **not to let the surface dry** after coating.
 
 ## 4. Seeding Cells
 
-After coating, the plates are ready for cell seeding.
-Typical seeding densities:
-- **50,000–150,000 cells per well** on the sensor area
+After coating, the plates are ready for cell seeding. Typical seeding densities: - **50,000–150,000 cells per well** on the sensor area
 
 ::: callout-note
 We strongly recommend performing a **pilot experiment** using different cell numbers and concentrations.
 :::
 
-
 Key considerations:
 
-- The sensor area is covered with approximately **50 µL** of solution.
-- Concentrate your cell suspension accordingly.
-- After seeding, place the plate in the incubator for **1 hour**.
-  - Do **not exceed 1 hour**, as evaporation of the 50 µL can occur.
+-   The sensor area is covered with approximately **50 µL** of solution.
+-   Concentrate your cell suspension accordingly.
+-   After seeding, place the plate in the incubator for **1 hour**.
+
+::: callout-warning
+Do **not exceed 1 hour**, as evaporation of the 50 µL can occur.
+:::
 
 After incubation, carefully fill the wells:
 
-- **24-well plates:** ~**500–600 µL** per well
-- **6-well plates:** **1–1.5 mL** per well
+-   **24-well plates:** \~**500–600 µL** per well
+-   **6-well plates:** **1–1.5 mL** per well
 
 Proceed with your normal cell culture routine.
 
-## Tips and Tricks
+::: callout-caution
+**Never touch the sensor area with pipette tips**, as this may damage the electronic components.\
+When aspirating liquid, place the aspirator carefully at the corner of the sensor area and slightly tilt the plate.
+:::
 
-- **Never touch the sensor area with pipette tips**, as this may damage the electronic components.  
-  When aspirating liquid, place the aspirator carefully at the corner of the sensor area and slightly tilt the plate.
+::: callout-tip
+When placing **50 µL** of solution on the sensor area, make sure the surrounding area is dry.\
+Any liquid connection to wet regions outside the sensor area will cause the droplet to spread and may prevent full coverage of the sensor.
 
-- When placing **50 µL** of solution on the sensor area, make sure the surrounding area is dry.  
-  Any liquid connection to wet regions outside the sensor area will cause the droplet to spread and may prevent full coverage of the sensor.
-
-Always verify that you can see a **distinct liquid bubble** over the sensor area. This is critical for successful seeding, as spreading will cause cells to distribute outside the sensor instead of settling on it.
-- If you notice that the liquid is spreading too much, try reducing the volume slightly (e.g., to **40 µL**).  
-  Alternatively, you can try to **absorb excess liquid** from the corners of the sensor area using a sterile tissue or pipette tip (without touching the sensor surface).
+Always verify that you can see a **distinct liquid bubble** over the sensor area. This is critical for successful seeding, as spreading will cause cells to distribute outside the sensor instead of settling on it. - If you notice that the liquid is spreading too much, try reducing the volume slightly (e.g., to **40 µL**).\
+Alternatively, you can try to **absorb excess liquid** from the corners of the sensor area using a sterile tissue or pipette tip (without touching the sensor surface).
+:::
