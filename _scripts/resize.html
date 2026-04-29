@@ -3,6 +3,7 @@
     window.parent.postMessage(document.body.scrollHeight, "*");
   }
 
+  // On initial load
   window.addEventListener("load", function() {
     sendHeight();
     setTimeout(sendHeight, 1000);
@@ -10,5 +11,18 @@
     setTimeout(sendHeight, 6000);
   });
 
+  // Catch hash changes
   window.addEventListener("hashchange", sendHeight);
+
+  // Catch any click (covers accordion/FAQ toggles and navigation)
+  document.addEventListener("click", function() {
+    setTimeout(sendHeight, 300);
+    setTimeout(sendHeight, 600);
+  });
+
+  // Catch DOM changes (accordion content appearing)
+  var observer = new MutationObserver(function() {
+    sendHeight();
+  });
+  observer.observe(document.body, { subtree: true, childList: true, attributes: true });
 </script>
