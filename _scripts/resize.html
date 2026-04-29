@@ -1,3 +1,17 @@
 <script>
-  window.parent.postMessage(document.body.scrollHeight, "*");
+  function sendHeight() {
+    window.parent.postMessage(document.body.scrollHeight, "*");
+  }
+
+  // Send on initial load
+  window.addEventListener("load", sendHeight);
+
+  // Send again after a short delay to catch late-loading content (videos etc.)
+  window.addEventListener("load", function() {
+    setTimeout(sendHeight, 500);
+    setTimeout(sendHeight, 1500);
+  });
+
+  // Send whenever the URL changes (navigation within the site)
+  window.addEventListener("hashchange", sendHeight);
 </script>
