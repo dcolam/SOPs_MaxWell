@@ -23,6 +23,8 @@ website:
   sidebar:
     contents: auto
   page-navigation: true
+  back-to-top-navigation: true        # nice for long tutorial pages
+  reader-mode: true                   # clean distraction-free reading option
 
 format:
   html:
@@ -31,6 +33,9 @@ format:
       - brand
     css: styles.css
     toc: true
+    toc-depth: 3                      # shows sub-sections in the TOC
+    toc-expand: true                  # TOC expanded by default
+    smooth-scroll: true               # nicer in-page navigation
+    include-after-body: _scripts/resize.html   # <-- add this
 
 editor: visual
-
